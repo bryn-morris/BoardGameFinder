@@ -1,0 +1,103 @@
+{
+  "boardgames": [
+  {
+      "id": 1,
+      "name": "Root",
+      "image": "https://cf.geekdo-images.com/JUAUWaVUzeBgzirhZNmHHw__imagepage/img/ZF-dta5ffawuKAkAt2LB-QTIv5M=/fit-in/900x600/filters:no_upscale():strip_icc()/pic4254509.jpg",
+      "likes": 3, 
+      "description": "Root is a game of adventure and war in which 2 to 4 (1 to 6 with the 'Riverfolk' expansion) players battle for control of a vast wilderness. The nefarious Marquise de Cat has seized the great woodland, intent on harvesting its riches. Under her rule, the many creatures of the forest have banded together. This Alliance will seek to strengthen its resources and subvert the rule of Cats. In this effort, the Alliance may enlist the help of the wandering Vagabonds who are able to move through the more dangerous woodland paths. Though some may sympathize with the Alliance’s hopes and dreams, these wanderers are old enough to remember the great birds of prey who once controlled the woods.  Meanwhile, at the edge of the region, the proud, squabbling Eyrie have found a new commander who they hope will lead their faction to resume their ancient birthright. The stage is set for a contest that will decide the fate of the great woodland. It is up to the players to decide which group will ultimately take root. Root represents the next step in our development of asymmetric design. Like Vast: The Crystal Caverns, each player in Root has unique capabilities and a different victory condition. Now, with the aid of gorgeous, multi-use cards, a truly asymmetric design has never been more accessible. The Cats play a game of engine building and logistics while attempting to police the vast wilderness. By collecting Wood they are able to produce workshops, lumber mills, and barracks. They win by building new buildings and crafts. The Eyrie musters their hawks to take back the Woods. They must capture as much territory as possible and build roosts before they collapse back into squabbling. The Alliance hides in the shadows, recruiting forces and hatching conspiracies. They begin slowly and build towards a dramatic late-game presence--but only if they can manage to keep the other players in check. Meanwhile, the Vagabond plays all sides of the conflict for their own gain, while hiding a mysterious quest. Explore the board, fight other factions, and work towards achieving your hidden goal. In Root, players drive the narrative, and the differences between each role create an unparalleled level of interaction and replayability. Leder Games invites you and your family to explore the fantastic world of Root! —description from the publisher",
+      "playerCount": "2-4",
+      "playTime": "60-90"
+  },
+    {
+      "id": 2,
+      "name": "Ticket to Ride",
+      "image": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1629324738308.jpg?format=webp",
+      "likes": 9, 
+      "description": "Ticket to Ride is a cross-country train adventure game. Players collect train cards that enable them to claim railway routes connecting cities throughout North America. The longer the routes, the more points they earn. Additional points come to those who can fulfill their Destination Tickets by connecting two distant cities, and to the player who builds the longest continuous railway. So climb aboard for some railroading fun and adventure. You've got a Ticket to Ride!",
+      "playerCount": "2-5",
+      "playTime": "45-90"
+    },
+    {
+      "id": 3,
+      "name": "Patchwork",
+      "image": "https://m.media-amazon.com/images/I/91SHanVV2ZL._AC_SX679_.jpg",
+      "likes": 5, 
+      "description": "Patchwork is a form of needlework that involves sewing together pieces of fabric into a larger design. To create a beautiful quilt, however, requires effort and time, but the available patches just do not want to fit together. So choose your patches carefully and keep a healthy supply of buttons to not only finish your quilt, but to make it better and more beautiful than your opponent's.",
+      "playerCount": "2",
+      "playTime": "15-30"
+    },
+    {
+      "id": 4,
+      "name": "Splendor",
+      "image": "https://m.media-amazon.com/images/I/71EbsKxiYeL._AC_SX679_.jpg",
+      "likes": 3, 
+      "description": "Splendor is a fast-paced and addictive game of chip-collecting and card development. Players are merchants of the Renaissance trying to buy gem mines, means of transportation, shops; all in order to acquire the most prestige points. If you're wealthy enough, you might even receive a visit from a noble at some point, which of course will further increase your prestige. All of the cards you buy increase your wealth as they give you a permanent gem bonus for later buys; some of the cards also give you prestige points. In order to win the game, you must reach 15 prestige points before your opponents do.",
+      "playerCount": "2-4",
+      "playTime": "30-60"
+    },
+    {
+      "id": 5,
+      "name": "Azul",
+      "image": "https://m.media-amazon.com/images/I/81nAI9XZlEL._AC_SX679_.jpg",
+      "likes": 6, 
+      "description": "Azul captures the beautiful aesthetics of Moorish art in a contemporary board game. Players compete as artisans decorating the walls of the royal Palace of Dvora. By carefully drafting the correct quantity and style of tiles, the most clever of artisans plan ahead to maximize the beauty of their work (not to mention their scores!) while ensuring they wasted no supplies in the process.",
+      "playerCount": "2-4",
+      "playTime": "30-60"
+    },
+    {
+      "id": 6,
+      "name": "Catan",
+      "image": "https://m.media-amazon.com/images/I/81+okm4IpfL._AC_SX679_.jpg",
+      "likes": 8, 
+      "description": "The women and men of your expedition build the first two settlements. Fortunately, the land is rich in natural resources. You build roads and new settlements that eventually become cities. Will you succeed in gaining supremacy on Catan? Barter trade dominates the scene. Some resources you have in abundance, other resources are scarce. Ore for wool, brick for lumber - you trade according to what is needed for your current building projects. Proceed strategically! If you found your settlements in the right places and skillfully trade your resources, then the odds will be in your favor. But your opponents are smart too.",
+      "playerCount": "3-4",
+      "playTime": "45-90"
+    },
+    {
+      "id": 7,
+      "name": "Galaxy Trucker",
+      "image": "https://cdn11.bigcommerce.com/s-ua4dd/images/stencil/1280x1280/products/46391/131918/9f01326f399ff74f0e736f0fe730f705_1024x1024_1__36520.1631641499.jpg?c=2",
+      "likes": 2, 
+      "description": "In this fast and goofy family game, players begin by simultaneously rummaging through the common warehouse, frantically trying to grab the most useful component tiles for building their space ship—all in real-time. Once the ships are launched, players will encounter dangerous situations while vying for financial opportunities—each hoping to gain the most valuable cargo and finish with as much of their ship still intact as possible. Of course, that's easier said than done since many hazards will send pieces of your ship, your cargo, and your crew hurling into the depths of space. The goal is to survive the trek (hopefully with at least some of your crew and ship intact) and have at least one credit by the end of the game (a profit, yay!). Players earn credits by delivering goods, defeating pirates, having the best-looking ship, and reaching their destination before the others.",
+      "playerCount": "2-4",
+      "playTime": "20-30"
+    },
+    {
+      "id": 8,
+      "name": "Pandemic",
+      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+      "likes": 8, 
+      "description": "In Pandemic, several virulent diseases have broken out simultaneously all over the world! The players are disease-fighting specialists whose mission is to treat disease hotspots while researching cures for each of four plagues before they get out of hand. The game board depicts several major population centers on Earth. On each turn, a player can use up to four actions to travel between cities, treat infected populaces, discover a cure, or build a research station. A deck of cards provides the players with these abilities, but sprinkled throughout this deck are Epidemic! cards that accelerate and intensify the diseases' activity. A second, separate deck of cards controls the 'normal' spread of the infections. Taking a unique role within the team, players must plan their strategy to mesh with their specialists' strengths in order to conquer the diseases.",
+      "playerCount": "2-4",
+      "playTime": "45-60"
+    },
+    {
+      "id": 9,
+      "name": "SmallWorld",
+      "image": "https://cf.geekdo-images.com/aoPM07XzoceB-RydLh08zA__imagepage/img/lHmv0ddOrUvpiLcPeQbZdT5yCEA=/fit-in/900x600/filters:no_upscale():strip_icc()/pic428828.jpg",
+      "likes": 7, 
+      "description": "In Small World, players vie for conquest and control of a world that is simply too small to accommodate them all. Designed by Philippe Keyaerts as a fantasy follow-up to his award-winning Vinci, Small World is inhabited by a zany cast of characters such as dwarves, wizards, amazons, giants, orcs, and even humans, who use their troops to occupy territory and conquer adjacent lands in order to push the other races off the face of the earth. Picking the right combination from the 14 different fantasy races and 20 unique special powers, players rush to expand their empires - often at the expense of weaker neighbors. Yet they must also know when to push their own over-extended civilization into decline and ride a new one to victory! On each turn, you either use the multiple tiles of your chosen race (type of creatures) to occupy adjacent (normally) territories - possibly defeating weaker enemy races along the way, or you give up on your race letting it go into decline. A race in decline is designated by flipping the tiles over to their black-and-white side. At the end of your turn, you score one point (coin) for each territory your races occupy. You may have one active race and one race in decline on the board at the same time. Your occupation total can vary depending on the special abilities of your race and the territories they occupy. After the final round, the player with the most coins wins.",
+      "playerCount": "3-4",
+      "playTime": "40-80"
+    },
+    {
+      "id": 10,
+      "name": "Terraforming Mars",
+      "image": "https://cf.geekdo-images.com/wg9oOLcsKvDesSUdZQ4rxw__imagepage/img/FS1RE8Ue6nk1pNbPI3l-OSapQGc=/fit-in/900x600/filters:no_upscale():strip_icc()/pic3536616.jpg",
+      "likes": 10, 
+      "description": "In the 2400s, mankind begins to terraform the planet Mars. Giant corporations, sponsored by the World Government on Earth, initiate huge projects to raise the temperature, the oxygen level, and the ocean coverage until the environment is habitable. In Terraforming Mars, you play one of those corporations and work together in the terraforming process, but compete for getting victory points that are awarded not only for your contribution to the terraforming, but also for advancing human infrastructure throughout the solar system, and doing other commendable things. The players acquire unique project cards (from over two hundred different ones) by buying them to their hand. The projects (cards) can represent anything from introducing plant life or animals, hurling asteroids at the surface, building cities, to mining the moons of Jupiter and establishing greenhouse gas industries to heat up the atmosphere. The cards can give you immediate bonuses, as well as increasing your production of different resources. Many cards also have requirements and they become playable when the temperature, oxygen, or ocean coverage increases enough. Buying cards is costly, so there is a balance between buying cards (3 megacredits per card) and actually playing them (which can cost anything between 0 to 41 megacredits, depending on the project). Standard Projects are always available to complement your cards. Your basic income, as well as your basic score, is based on your Terraform Rating (starting at 20), which increases every time you raise one of the three global parameters. However, your income is complemented with your production, and you also get VPs from many other sources. Each player keeps track of their production and resources on their player boards, and the game uses six types of resources: MegaCredits, Steel, Titanium, Plants, Energy, and Heat. On the game board, you compete for the best places for your city tiles, ocean tiles, and greenery tiles. You also compete for different Milestones and Awards worth many VPs. Each round is called a generation (guess why) and consists of the following phases: 1) Player order shifts clockwise. 2) Research phase: All players buy cards from four privately drawn. 3) Action phase: Players take turns doing 1-2 actions from these options: Playing a card, claiming a Milestone, funding an Award, using a Standard project, converting plant into greenery tiles (and raising oxygen), converting heat into a temperature raise, and using the action of a card in play. The turn continues around the table (sometimes several laps) until all players have passed. 4) Production phase: Players get resources according to their terraform rating and production parameters. When the three global parameters (temperature, oxygen, ocean) have all reached their goal, the terraforming is complete, and the game ends after that generation. Count your Terraform Rating and other VPs to determine the winning corporation!",
+      "playerCount": "1-5",
+      "playTime": "120"
+    },
+    {
+      "id": 11,
+      "name": "Munchkin",
+      "image": "https://cf.geekdo-images.com/J-ts3MW0UhDzs621TR6cog__imagepage/img/HJAhCcz8QJbVAYYQI71uYLsKkRM=/fit-in/900x600/filters:no_upscale():strip_icc()/pic1871016.jpg",
+      "likes": 4, 
+      "description": "Go down in the dungeon. Kill everything you meet. Backstab your friends and steal their stuff. Grab the treasure and run. Admit it. You love it. This award-winning card game, designed by Steve Jackson, captures the essence of the dungeon experience... with none of that stupid roleplaying stuff. You and your friends compete to kill monsters and grab magic items. And what magic items! Don the Horny Helmet and the Boots of Butt-Kicking. Wield the Staff of Napalm... or maybe the Chainsaw of Bloody Dismemberment. Start by slaughtering the Potted Plant and the Drooling Slime, and work your way up to the Plutonium Dragon... And it's illustrated by John Kovalic! Fast-playing and silly, Munchkin can reduce any roleplaying group to hysteria. And, while they're laughing, you can steal their stuff.",
+      "playerCount": "3-6",
+      "playTime": "60-120"
+    }
+  ]
+}
