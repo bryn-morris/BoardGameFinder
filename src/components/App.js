@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 import NavBar from "./NavBar";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -10,20 +10,13 @@ function App() {
   return (
   <div>
     <NavBar />
-    <Switch>
-      <Route exact path="/">
-        <Home />
+      <Route path="/">
+        <Header />
+        <Footer />
       </Route>
-      <Route path="/actors">
-        <Actors />
+      <Route path="/boardgamecontainer">
+        <BoardGameContainer />
       </Route>
-      <Route path="/directors">
-        <Directors />
-      </Route>
-      <Route path="/movies">
-        <Movies />
-      </Route>
-    </Switch>
   </div>
   )
 }
