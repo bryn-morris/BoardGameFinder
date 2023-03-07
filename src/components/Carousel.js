@@ -8,7 +8,6 @@ function Carousel ({boardGameArray}) {
 
     return(
         <div name="TESTER">
-            {/* <h1>Is this working?</h1> */}
             {boardGameArray[boardGameArray.findIndex(obj => obj.id === parseInt(eBGID))].name}
         </div>
     )

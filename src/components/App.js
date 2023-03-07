@@ -63,7 +63,6 @@ function App() {
   <div>
     <NavBar />
     <Header />
-    <Footer />
     <Switch>
       <Route path="/boardgamecontainer">
           <BoardGameContainer {...boardGameContainerPropsObj}/>
@@ -72,8 +71,7 @@ function App() {
           <LandingPage boardGameArray = {boardGameArray}/>
       </Route>
     </Switch>
-      
-      
+    <Footer />
   </div>
   )
 }
