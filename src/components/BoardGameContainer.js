@@ -1,3 +1,4 @@
+import { response } from "express";
 import React, { useState, useEffect } from "react";
 import { Route } from "react-router-dom";
 import BoardGameCard from "./BoardGameCard"
@@ -36,8 +37,26 @@ function BoardGameContainer () {
             .then(updateForPatch)
     }
 
+    const handleFormSubmission = newFormObject => {
+        setBoardGameArray([newFormObject, ...boardGameArray])
+
+
+        const addBoardGameToState = () => {
+            fetch("http://localhost:4000/boardgames", {
+            method: "POST",
+            headers: {"Content-type" : "application/json"},
+            body: JSON.stringify({newFormObject})
+        })
+            .then(r=>r.json())
+            // .then(response => console.log(response))
+        }
+        addBoardGameToState();
+
+    }
+
     return(
         <div>
+            <BoardGameForm handleFormSubmission={handleFormSubmission}/>
             {boardGameArray.map((eBO) => {
                 return (
                     <BoardGameCard 
