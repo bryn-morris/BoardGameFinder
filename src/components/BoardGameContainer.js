@@ -16,11 +16,35 @@ function BoardGameContainer () {
     },
     [])
 
+    function handleLikeUpdate(updateID, likes){
+
+        function updateForPatch (updatedObj) {
+            setBoardGameArray(
+                boardGameArray.map((eachBoardGame)=>{
+                    if(updateID === eachBoardGame.id) {return updatedObj} 
+                    else {return eachBoardGame}
+                })
+            )
+        }
+
+        fetch(`http://localhost:4000/boardgames/${updateID}`,{
+            method: "PATCH",
+            headers: {"Content-type" : "application/json"},
+            body: JSON.stringify({likes: likes})
+        })
+            .then(r=>r.json())
+            .then(updateForPatch)
+    }
+
     return(
         <div>
             {boardGameArray.map((eBO) => {
                 return (
-                    <BoardGameCard key = {eBO.id} eBO = {eBO}/>
+                    <BoardGameCard 
+                        key = {eBO.id} 
+                        eBO = {eBO}
+                        handleLikeUpdate = {handleLikeUpdate}
+                    />
                 )
             }
             )}
