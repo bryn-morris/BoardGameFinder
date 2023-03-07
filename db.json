@@ -98,17 +98,6 @@
       "description": "Go down in the dungeon. Kill everything you meet. Backstab your friends and steal their stuff. Grab the treasure and run. Admit it. You love it. This award-winning card game, designed by Steve Jackson, captures the essence of the dungeon experience... with none of that stupid roleplaying stuff. You and your friends compete to kill monsters and grab magic items. And what magic items! Don the Horny Helmet and the Boots of Butt-Kicking. Wield the Staff of Napalm... or maybe the Chainsaw of Bloody Dismemberment. Start by slaughtering the Potted Plant and the Drooling Slime, and work your way up to the Plutonium Dragon... And it's illustrated by John Kovalic! Fast-playing and silly, Munchkin can reduce any roleplaying group to hysteria. And, while they're laughing, you can steal their stuff.",
       "playerCount": "3-6",
       "playTime": "60-120"
-    },
-    {
-      "newFormObject": {
-        "name": "Is",
-        "image": "this ",
-        "likes": 0,
-        "description": "form",
-        "playerCount": "working",
-        "playTime": "now"
-      },
-      "id": 12
     }
   ]
 }

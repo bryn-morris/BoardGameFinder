@@ -2,19 +2,21 @@ import React, {useState} from "react";
 
 function BoardGameForm({handleFormSubmission}) {
 
-    const [formObject, setFormObject] = useState({
+    const emptyFormObj = {
         name: "",
         image: "",
         likes: "",
         description: "",
         playerCount: "",
         playTime: ""
-    })
+    }
+
+    const [formObject, setFormObject] = useState(emptyFormObj)
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
-        
         handleFormSubmission({...formObject, likes: 0})
+        setFormObject(emptyFormObj)
         }
         
 
