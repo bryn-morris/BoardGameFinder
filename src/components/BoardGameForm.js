@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function BoardGameForm({handleFormSubmission}) {
+function BoardGameForm({handleFormSubmission, setOpen}) {
 
     const emptyFormObj = {
         name: "",
@@ -17,6 +17,7 @@ function BoardGameForm({handleFormSubmission}) {
         e.preventDefault();
         handleFormSubmission({...formObject, likes: 0})
         setFormObject(emptyFormObj)
+        setOpen(false)
         }
         
 
@@ -27,13 +28,27 @@ function BoardGameForm({handleFormSubmission}) {
 
     return (
         <div>
-            <form onSubmit={handleFormSubmit}>
-                <input onChange={handleFormInputChange} name="name" type="text" value={formObject.name} placeholder="Name"/>
-                <input onChange={handleFormInputChange} name="image" type="text" value={formObject.image} placeholder="Image"/>
-                <input onChange={handleFormInputChange} name="description" type="text" value={formObject.description} placeholder="Description"/>
-                <input onChange={handleFormInputChange} name="playerCount" type="text" value={formObject.playerCount} placeholder="Player Count"/>
-                <input onChange={handleFormInputChange} name="playTime" type="text" value={formObject.playTime} placeholder="Play Time"/>
-                <button type="submit">Form Submit</button>
+            <form id = "newBoardGameSubmit" onSubmit={handleFormSubmit} class ="ui form">
+                <div className="field">
+                    <label>Boardgame Name</label>
+                    <input onChange={handleFormInputChange} name="name" type="text" value={formObject.name} placeholder="Name"/> <br />
+                </div>
+                <div className="field">
+                    <label>BoardGame Image</label>
+                    <input onChange={handleFormInputChange} name="image" type="text" value={formObject.image} placeholder="Image"/> <br />
+                </div>
+                <div className="field">
+                    <label>BoardGame Description</label>
+                    <textarea onChange={handleFormInputChange} name="description" type="text" value={formObject.description} placeholder="Description"></textarea>
+                </div>
+                <div className="field">
+                    <label>BoardGame PlayerCount:</label>
+                    <input onChange={handleFormInputChange} name="playerCount" type="text" value={formObject.playerCount} placeholder="Player Count"/> <br />
+                </div>
+                <div className="field">
+                    <label>BoardGame PlayTime:</label>
+                    <input onChange={handleFormInputChange} name="playTime" type="text" value={formObject.playTime} placeholder="Play Time"/> <br />
+                </div>
             </form>
         </div>
     )

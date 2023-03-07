@@ -13,8 +13,8 @@ function BoardGameCard ({eBO, handleLikeUpdate}) {
     }
 
     return (
-        <div>
-            <img src={eBO.image} alt = {eBO.name}/>
+        <div className = "boardGameCard">
+            <img src={eBO.image} alt = {eBO.name} className = "cardImage"/>
             <h3>{eBO.name}</h3>
             <p>
                 {isLiked ? (<AiFillHeart onClick = {toggleLikeClick}/>) : (<AiOutlineHeart onClick = {toggleLikeClick}/>)}
