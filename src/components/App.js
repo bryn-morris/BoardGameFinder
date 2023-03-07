@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import NavBar from "./NavBar";
 import Header from "./Header";
 import Footer from "./Footer";
 import BoardGameContainer from "./BoardGameContainer.js";
-import LANDING_PAGE from "./Landing_Page"
+import LandingPage from "./Landing_Page"
 
 
 function App() {
@@ -59,21 +59,20 @@ function App() {
       handleFormSubmission: handleFormSubmission
     }
 
-
-
   return (
   <div>
     <NavBar />
-      <Route exact path ="/">
-        <Header />
-        <LANDING_PAGE boardGameArray = {boardGameArray}/>
-        <Footer />
-      </Route>
+    <Header />
+    <Footer />
+    <Switch>
       <Route path="/boardgamecontainer">
-        <Header />
-        <BoardGameContainer {...boardGameContainerPropsObj}/>
-        <Footer />
+          <BoardGameContainer {...boardGameContainerPropsObj}/>
       </Route>
+      <Route path ="/"> 
+          <LandingPage boardGameArray = {boardGameArray}/>
+      </Route>
+    </Switch>
+      
       
   </div>
   )
