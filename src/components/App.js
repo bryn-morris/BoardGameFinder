@@ -12,11 +12,11 @@ function App() {
     <NavBar />
       <Route path="/">
         <Header />
-        <Footer />
       </Route>
       <Route path="/boardgamecontainer">
         <BoardGameContainer />
       </Route>
+      <Footer />
   </div>
   )
 }

@@ -30,5 +30,3 @@ function BoardGameCard ({eBO, handleLikeUpdate}) {
 export default BoardGameCard;
 
 // Possibly Look towards replacing the icon in the ternary with a more thematic representation 
-//<AiFillHeart/> {eBO.likes} likes
-// (<AiOutlineHeart /> {eBO.likes} likes)
