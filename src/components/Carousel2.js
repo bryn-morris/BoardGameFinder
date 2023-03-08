@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
 import { Image,} from 'semantic-ui-react'
+import {MdOutlineArrowBackIosNew, MdOutlineArrowForwardIos} from 'react-icons/md';
+
 
 function Carousel2 ({favoriteFilterArray}) {
 
@@ -36,25 +38,24 @@ function Carousel2 ({favoriteFilterArray}) {
     }
 
     return(
-        <div>
-            
-            <div className = "ui centered column grid">
-                <div className = "column">
-                    <button onClick = {leftArrow}>LeftArrow</button>
+        <div className="ui grid middle aligned">
+            <div className = "ui centered grid container">
+                <div className="column one wide centered middle aligned">
+                    <div onClick = {leftArrow}><MdOutlineArrowBackIosNew size={70}/></div>
                 </div>
                         {displayedCards.map((eBO)=>{
                             return(
-                                <div key = {eBO.id}>
+                                <div key = {eBO.id} className ="column four wide centered middle aligned">
                                     <Link to = {`/${eBO.id}`}>
-                                        <Image.Group className = "column" size = "large">
-                                            <Image src={eBO.image} alt = {eBO.name} wrapped ui={false} className = "ui segment" />
+                                        <Image.Group size="medium">
+                                            <Image src={eBO.image} alt = {eBO.name} wrapped ui={false} />
                                         </Image.Group>
                                     </Link>
                                 </div>
                                 )})
                         }
-                <div className = "column">
-                    <button onClick = {rightArrow}>Right Arrow</button>
+                <div className ="column one wide centered middle aligned">
+                    <div onClick = {rightArrow}><MdOutlineArrowForwardIos size={70}/></div>
                 </div>
             </div>
         </div>
