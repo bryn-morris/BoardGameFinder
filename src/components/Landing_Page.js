@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, useRouteMatch} from "react-router-dom"
-import BoardGameList from "./BoardGameList";
 import Carousel from "./Carousel";
+import FeaturedCardDetail from "./FeaturedCardDetail";
 
 function LandingPage({boardGameArray}){
 
@@ -9,9 +9,9 @@ function LandingPage({boardGameArray}){
 
     return(
     <div>
-       <BoardGameList boardGameArray={boardGameArray}/>
+       <Carousel boardGameArray={boardGameArray}/>
        <Route path = {`${match.url}:eBGID`}>
-         <Carousel boardGameArray = {boardGameArray}/>
+         <FeaturedCardDetail boardGameArray = {boardGameArray}/>
        </Route>
     </div>
     )
