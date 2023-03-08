@@ -12,7 +12,7 @@
     {
       "id": 2,
       "name": "Ticket to Ride",
-      "image": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1629324738308.jpg?format=webp",
+      "image": "https://upload.wikimedia.org/wikipedia/en/9/92/Ticket_to_Ride_Board_Game_Box_EN.jpg",
       "likes": 9,
       "description": "Ticket to Ride is a cross-country train adventure game. Players collect train cards that enable them to claim railway routes connecting cities throughout North America. The longer the routes, the more points they earn. Additional points come to those who can fulfill their Destination Tickets by connecting two distant cities, and to the player who builds the longest continuous railway. So climb aboard for some railroading fun and adventure. You've got a Ticket to Ride!",
       "playerCount": "2-5",
@@ -21,7 +21,7 @@
     {
       "id": 3,
       "name": "Patchwork",
-      "image": "https://m.media-amazon.com/images/I/91SHanVV2ZL._AC_SX679_.jpg",
+      "image": "https://m.media-amazon.com/images/I/91qsiKuN3SL.jpg",
       "likes": 5,
       "description": "Patchwork is a form of needlework that involves sewing together pieces of fabric into a larger design. To create a beautiful quilt, however, requires effort and time, but the available patches just do not want to fit together. So choose your patches carefully and keep a healthy supply of buttons to not only finish your quilt, but to make it better and more beautiful than your opponent's.",
       "playerCount": "2",
@@ -30,7 +30,7 @@
     {
       "id": 4,
       "name": "Splendor",
-      "image": "https://m.media-amazon.com/images/I/71EbsKxiYeL._AC_SX679_.jpg",
+      "image": "https://spielstil.net/wp-content/uploads/2018/12/IMG_7450.png",
       "likes": 3,
       "description": "Splendor is a fast-paced and addictive game of chip-collecting and card development. Players are merchants of the Renaissance trying to buy gem mines, means of transportation, shops; all in order to acquire the most prestige points. If you're wealthy enough, you might even receive a visit from a noble at some point, which of course will further increase your prestige. All of the cards you buy increase your wealth as they give you a permanent gem bonus for later buys; some of the cards also give you prestige points. In order to win the game, you must reach 15 prestige points before your opponents do.",
       "playerCount": "2-4",
@@ -39,7 +39,7 @@
     {
       "id": 5,
       "name": "Azul",
-      "image": "https://m.media-amazon.com/images/I/81nAI9XZlEL._AC_SX679_.jpg",
+      "image": "https://www.boardgamequest.com/wp-content/uploads/2017/10/Azul.jpg",
       "likes": 6,
       "description": "Azul captures the beautiful aesthetics of Moorish art in a contemporary board game. Players compete as artisans decorating the walls of the royal Palace of Dvora. By carefully drafting the correct quantity and style of tiles, the most clever of artisans plan ahead to maximize the beauty of their work (not to mention their scores!) while ensuring they wasted no supplies in the process.",
       "playerCount": "2-4",
@@ -48,7 +48,7 @@
     {
       "id": 6,
       "name": "Catan",
-      "image": "https://m.media-amazon.com/images/I/81+okm4IpfL._AC_SX679_.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/en/a/a3/Catan-2015-boxart.jpg",
       "likes": 8,
       "description": "The women and men of your expedition build the first two settlements. Fortunately, the land is rich in natural resources. You build roads and new settlements that eventually become cities. Will you succeed in gaining supremacy on Catan? Barter trade dominates the scene. Some resources you have in abundance, other resources are scarce. Ore for wool, brick for lumber - you trade according to what is needed for your current building projects. Proceed strategically! If you found your settlements in the right places and skillfully trade your resources, then the odds will be in your favor. But your opponents are smart too.",
       "playerCount": "3-4",
@@ -57,7 +57,7 @@
     {
       "id": 7,
       "name": "Galaxy Trucker",
-      "image": "https://cdn11.bigcommerce.com/s-ua4dd/images/stencil/1280x1280/products/46391/131918/9f01326f399ff74f0e736f0fe730f705_1024x1024_1__36520.1631641499.jpg?c=2",
+      "image": "https://www.boardgamequest.com/wp-content/uploads/2022/01/Galaxy-Trucker.jpg",
       "likes": 2,
       "description": "In this fast and goofy family game, players begin by simultaneously rummaging through the common warehouse, frantically trying to grab the most useful component tiles for building their space ship—all in real-time. Once the ships are launched, players will encounter dangerous situations while vying for financial opportunities—each hoping to gain the most valuable cargo and finish with as much of their ship still intact as possible. Of course, that's easier said than done since many hazards will send pieces of your ship, your cargo, and your crew hurling into the depths of space. The goal is to survive the trek (hopefully with at least some of your crew and ship intact) and have at least one credit by the end of the game (a profit, yay!). Players earn credits by delivering goods, defeating pirates, having the best-looking ship, and reaching their destination before the others.",
       "playerCount": "2-4",
@@ -66,7 +66,7 @@
     {
       "id": 8,
       "name": "Pandemic",
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+      "image": "https://www.boardgamequest.com/wp-content/uploads/2013/03/Pandemic.jpg",
       "likes": 8,
       "description": "In Pandemic, several virulent diseases have broken out simultaneously all over the world! The players are disease-fighting specialists whose mission is to treat disease hotspots while researching cures for each of four plagues before they get out of hand. The game board depicts several major population centers on Earth. On each turn, a player can use up to four actions to travel between cities, treat infected populaces, discover a cure, or build a research station. A deck of cards provides the players with these abilities, but sprinkled throughout this deck are Epidemic! cards that accelerate and intensify the diseases' activity. A second, separate deck of cards controls the 'normal' spread of the infections. Taking a unique role within the team, players must plan their strategy to mesh with their specialists' strengths in order to conquer the diseases.",
       "playerCount": "2-4",

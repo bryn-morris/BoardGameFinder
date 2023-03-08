@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
 import { Route, Switch } from "react-router-dom";
-import NavBar from "./NavBar";
 import Header from "./Header";
 import Footer from "./Footer";
 import BoardGameContainer from "./BoardGameContainer.js";
@@ -61,7 +60,6 @@ function App() {
 
   return (
   <div>
-    <NavBar />
     <Header />
     <Switch>
       <Route path="/boardgamecontainer">

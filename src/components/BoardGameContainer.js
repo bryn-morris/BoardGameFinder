@@ -10,7 +10,7 @@ function BoardGameContainer ({boardGameArray, handleFormSubmission, handleLikeUp
     const [open, setOpen] = React.useState(false)
 
     return(
-        <div>          
+        <div className="ui grid container">          
             <Modal
                 onClose={() => setOpen(false)}
                 onOpen={() => setOpen(true)}
