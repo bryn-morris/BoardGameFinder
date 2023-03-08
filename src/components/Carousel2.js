@@ -15,9 +15,28 @@ function Carousel2 ({favoriteFilterArray}) {
         setDisplayedCards(favoriteFilterArray.slice(indexObj.start,indexObj.end))
     },[favoriteFilterArray, indexObj.start, indexObj.end])
 
+
     function rightArrow (eventObj) {
         
         const {start, end} = indexObj
+
+        // const newData =  {start: "", end: ""}
+    
+        // if (start > favoriteFilterArray.length()) {
+        //     newData.start = 0
+        // } else if (start < 0) {
+        //     newData.start = favoriteFilterArray.length();
+        // } else {
+        //     newData.start = (start+1)
+        // }
+
+        // if (start > favoriteFilterArray.length()) {
+        //     newData.end = 0
+        // } else if (start < 0) {
+        //     newData.end = favoriteFilterArray.length();
+        // } else {
+        //     newData.end = (end+1)
+        // }
 
         const newStartIndex = start+1; 
         const newEndIndex = end+1;
