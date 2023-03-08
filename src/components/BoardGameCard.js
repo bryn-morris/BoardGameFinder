@@ -15,7 +15,13 @@ function BoardGameCard ({eBO, handleLikeUpdate}) {
 
     return (
         <Card className="four wide column" fluid>
-            <Image src={eBO.image} alt = {eBO.name} wrapped ui={false} />
+            <Image 
+                fluid
+                label={{ as: 'a', corner: 'right', icon: 'heart'}}
+                src={eBO.image} 
+                alt = {eBO.name} 
+                wrapped ui={false} 
+            />
             <Card.Content>
                 <Card.Header>{eBO.name}</Card.Header>
                 <Card.Meta>
