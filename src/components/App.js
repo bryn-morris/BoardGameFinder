@@ -17,26 +17,18 @@ function App() {
             .then(setBoardGameArray)
     },
     [])
-
-    function handleLikeUpdate(updateID, likes){
-
-        function updateForPatch (updatedObj) {
-            setBoardGameArray(
-                boardGameArray.map((eachBoardGame)=>{
-                    if(updateID === eachBoardGame.id) {return updatedObj} 
-                    else {return eachBoardGame}
-                })
-            )
-        }
+    
+    function handleFavoriteUpdate(updateID, favoriteBoolean){
 
         fetch(`http://localhost:4000/boardgames/${updateID}`,{
             method: "PATCH",
             headers: {"Content-type" : "application/json"},
-            body: JSON.stringify({likes: likes})
+            body: JSON.stringify({favorited: favoriteBoolean})
         })
-            .then(r=>r.json())
-            .then(updateForPatch)
     }
+
+    const favoriteFilterArray = boardGameArray.filter(eachBoardGame=>eachBoardGame.favorited)
+    
 
     const handleFormSubmission = newFormObject => {
     
@@ -54,8 +46,8 @@ function App() {
 
     const boardGameContainerPropsObj = {
       boardGameArray: boardGameArray,
-      handleLikeUpdate: handleLikeUpdate,
-      handleFormSubmission: handleFormSubmission
+      handleFavoriteUpdate: handleFavoriteUpdate,
+      handleFormSubmission: handleFormSubmission,
     }
 
   return (
@@ -66,7 +58,7 @@ function App() {
           <BoardGameContainer {...boardGameContainerPropsObj}/>
       </Route>
       <Route path ="/"> 
-          <LandingPage boardGameArray = {boardGameArray}/>
+          <LandingPage favoriteFilterArray = {favoriteFilterArray}/>
       </Route>
     </Switch>
     <Footer />

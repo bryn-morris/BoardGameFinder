@@ -5,7 +5,7 @@ import { Button, Modal } from 'semantic-ui-react'
 import {MdPostAdd} from "react-icons/md"
 
 
-function BoardGameContainer ({boardGameArray, handleFormSubmission, handleLikeUpdate }) {
+function BoardGameContainer ({boardGameArray, handleFormSubmission, handleFavoriteUpdate}) {
 
     const [open, setOpen] = React.useState(false)
 
@@ -36,7 +36,7 @@ function BoardGameContainer ({boardGameArray, handleFormSubmission, handleLikeUp
                     <BoardGameCard 
                         key = {eBO.id} 
                         eBO = {eBO}
-                        handleLikeUpdate = {handleLikeUpdate}
+                        handleFavoriteUpdate = {handleFavoriteUpdate}
                     />
                 )
             }

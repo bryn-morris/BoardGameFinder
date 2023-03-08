@@ -5,15 +5,15 @@ import Carousel2 from "./Carousel2";
 import FeaturedCardDetail from "./FeaturedCardDetail";
 
 
-function LandingPage({boardGameArray}){
+function LandingPage({favoriteFilterArray}){
 
     const match = useRouteMatch();
     return(
     <div>
-      <Carousel2 boardGameArray={boardGameArray}/>
+      <Carousel2 favoriteFilterArray={favoriteFilterArray}/>
        {/* <Carousel boardGameArray={boardGameArray}/> */}
        <Route path = {`${match.url}:eBGID`}>
-         <FeaturedCardDetail boardGameArray = {boardGameArray}/>
+         <FeaturedCardDetail />
        </Route> 
     </div>
     )

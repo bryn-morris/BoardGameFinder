@@ -3,23 +3,25 @@ import {GrGroup} from "react-icons/gr"
 import {FaRegClock} from "react-icons/fa"
 import { Card, Icon, Image, Grid } from 'semantic-ui-react'
 
-function BoardGameCard ({eBO, handleLikeUpdate}) {
+function BoardGameCard ({eBO, handleFavoriteUpdate}) {
 
-    const [isLiked, setIsLiked] = useState(false)
-
-    const toggleLikeClick = (eventObj) => {
-        setIsLiked(isLiked=>(!isLiked))
-        isLiked ? handleLikeUpdate(eBO.id, eBO.likes-1) : handleLikeUpdate(eBO.id, eBO.likes+1)
+    const [toggleFavorited, setToggleFavorited] = useState(eBO.favorited)
+    
+    const handleFavoriteClick = (eventObj) => {
+        const isFavorited = !toggleFavorited;
+        setToggleFavorited(isFavorited)
+        handleFavoriteUpdate(eBO.id, isFavorited)
     }
+    
 
     return (
         <Card className="four wide column">
             <Image 
-                label={{ as: 'a', corner: 'right', icon: isLiked ? ("heart") : ("heart outline")}}
+                label={{ as: 'a', corner: 'right', icon: toggleFavorited ? ("heart") : ("heart outline")}}
                 src={eBO.image} 
                 alt = {eBO.name} 
                 wrapped ui={false}
-                onClick = {toggleLikeClick} 
+                onClick = {handleFavoriteClick} 
             />
             <Card.Content>
                 <Card.Header>{eBO.name}</Card.Header>

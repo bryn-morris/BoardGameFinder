@@ -9,7 +9,7 @@
       "shortdescription": "Root is a game of adventure and war in which 2 to 4 (1 to 6 with the 'Riverfolk' expansion) players battle for control of a vast wilderness. The nefarious Marquise de Cat has seized the great woodland, intent on harvesting its riches.",
       "playerCount": "2-4",
       "playTime": "60-90",
-      "favorited": "true"
+      "favorited": true
     },
     {
       "id": 2,
@@ -20,7 +20,7 @@
       "shortdescription": "Ticket to Ride is a cross-country train adventure game. Players collect train cards that enable them to claim railway routes connecting cities throughout North America.",
       "playerCount": "2-5",
       "playTime": "45-90",
-      "favorited": "false"
+      "favorited": false
     },
     {
       "id": 3,
@@ -31,7 +31,7 @@
       "shortdescription": "Patchwork is a form of needlework that involves sewing together pieces of fabric into a larger design. To create a beautiful quilt, however, requires effort and time, but the available patches just do not want to fit together.",
       "playerCount": "2",
       "playTime": "15-30",
-      "favorited": "false"
+      "favorited": false
     },
     {
       "id": 4,
@@ -39,10 +39,10 @@
       "image": "https://spielstil.net/wp-content/uploads/2018/12/IMG_7450.png",
       "likes": 3,
       "longdescription": "Splendor is a fast-paced and addictive game of chip-collecting and card development. Players are merchants of the Renaissance trying to buy gem mines, means of transportation, shops; all in order to acquire the most prestige points. If you're wealthy enough, you might even receive a visit from a noble at some point, which of course will further increase your prestige. All of the cards you buy increase your wealth as they give you a permanent gem bonus for later buys; some of the cards also give you prestige points. In order to win the game, you must reach 15 prestige points before your opponents do.",
-      "shortdescription" : "Splendor is a fast-paced and addictive game of chip-collecting and card development. Players are merchants of the Renaissance trying to buy gem mines, means of transportation, shops; all in order to acquire the most prestige points.",
+      "shortdescription": "Splendor is a fast-paced and addictive game of chip-collecting and card development. Players are merchants of the Renaissance trying to buy gem mines, means of transportation, shops; all in order to acquire the most prestige points.",
       "playerCount": "2-4",
       "playTime": "30-60",
-      "favorited": "true"
+      "favorited": true
     },
     {
       "id": 5,
@@ -53,7 +53,7 @@
       "shortdescription": "Azul captures the beautiful aesthetics of Moorish art in a contemporary board game. Players compete as artisans decorating the walls of the royal Palace of Dvora.",
       "playerCount": "2-4",
       "playTime": "30-60",
-      "favorited": "true"
+      "favorited": true
     },
     {
       "id": 6,
@@ -64,7 +64,7 @@
       "shortdescription": "The women and men of your expedition build the first two settlements. Fortunately, the land is rich in natural resources. You build roads and new settlements that eventually become cities. Will you succeed in gaining supremacy on Catan?",
       "playerCount": "3-4",
       "playTime": "45-90",
-      "favorited": "false"
+      "favorited": false
     },
     {
       "id": 7,
@@ -75,7 +75,7 @@
       "shortdescription": "In this fast and goofy family game, players begin by simultaneously rummaging through the common warehouse, frantically trying to grab the most useful component tiles for building their space ship—all in real-time.",
       "playerCount": "2-4",
       "playTime": "20-30",
-      "favorited": "false"
+      "favorited": false
     },
     {
       "id": 8,
@@ -86,7 +86,7 @@
       "shortdescription": "In Pandemic, several virulent diseases have broken out simultaneously all over the world! The players are disease-fighting specialists whose mission is to treat disease hotspots while researching cures for each of four plagues before they get out of hand.",
       "playerCount": "2-4",
       "playTime": "45-60",
-      "favorited": "false"
+      "favorited": true
     },
     {
       "id": 9,
@@ -97,7 +97,7 @@
       "shortdescription": "In Small World, players vie for conquest and control of a world that is simply too small to accommodate them all. Designed by Philippe Keyaerts as a fantasy follow-up to his award-winning Vinci, Small World is inhabited by a zany cast of characters such as dwarves, wizards, amazons, giants, orcs, and even humans, who use their...",
       "playerCount": "3-4",
       "playTime": "40-80",
-      "favorited": "false"
+      "favorited": false
     },
     {
       "id": 10,
@@ -108,7 +108,7 @@
       "shortdescription": "In the 2400s, mankind begins to terraform the planet Mars. Giant corporations, sponsored by the World Government on Earth, initiate huge projects to raise the temperature, the oxygen level, and the ocean coverage until the environment is habitable. In Terraforming Mars, you play one of those corporations and work together in the terraforming process, but compete...",
       "playerCount": "1-5",
       "playTime": "120",
-      "favorited": "true"
+      "favorited": true
     },
     {
       "id": 11,
@@ -119,7 +119,7 @@
       "shortdescription": "Go down in the dungeon. Kill everything you meet. Backstab your friends and steal their stuff. Grab the treasure and run. Admit it. You love it. This award-winning card game, designed by Steve Jackson, captures the essence of the dungeon experience... with none of that stupid roleplaying stuff.",
       "playerCount": "3-6",
       "playTime": "60-120",
-      "favorited": "false"
+      "favorited": false
     }
   ]
 }
