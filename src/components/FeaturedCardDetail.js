@@ -1,10 +1,20 @@
-import React from "react"
+import React, {useEffect} from "react"
 import { useParams } from "react-router-dom";
 
 
 function FeaturedCardDetail ({boardGameArray}) {
 
+    console.log(boardGameArray)
+
     const {eBGID} = useParams();
+
+    useEffect(()=>{
+        
+
+
+    },[boardGameArray])
+
+    
 
     return(
         <div name="TESTER">
