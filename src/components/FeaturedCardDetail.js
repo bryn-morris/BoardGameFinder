@@ -1,24 +1,28 @@
-import React, {useEffect} from "react"
+import React, {useEffect, useState} from "react"
 import { useParams } from "react-router-dom";
 
 
-function FeaturedCardDetail ({boardGameArray}) {
-
-    console.log(boardGameArray)
+function FeaturedCardDetail () {
 
     const {eBGID} = useParams();
 
-    useEffect(()=>{
-        
-
-
-    },[boardGameArray])
+    const [game, setGame] = useState({})
 
     
 
+    useEffect(()=>{
+        
+        fetch (`http://localhost:4000/boardgames/${eBGID}`)
+            .then(r=>r.json())
+            .then(setGame)
+
+    },[eBGID])
+
+    console.log(game)
+
     return(
         <div name="TESTER">
-            {boardGameArray[boardGameArray.findIndex(obj => obj.id === parseInt(eBGID))].name}
+            {game.name}
         </div>
     )
 }

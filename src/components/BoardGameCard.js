@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import {AiFillHeart, AiOutlineHeart} from "react-icons/ai"
 import {GrGroup} from "react-icons/gr"
 import {FaRegClock} from "react-icons/fa"
 import { Card, Icon, Image, Grid } from 'semantic-ui-react'
@@ -14,13 +13,13 @@ function BoardGameCard ({eBO, handleLikeUpdate}) {
     }
 
     return (
-        <Card className="four wide column" fluid>
+        <Card className="four wide column">
             <Image 
-                fluid
-                label={{ as: 'a', corner: 'right', icon: 'heart'}}
+                label={{ as: 'a', corner: 'right', icon: isLiked ? ("heart") : ("heart outline")}}
                 src={eBO.image} 
                 alt = {eBO.name} 
-                wrapped ui={false} 
+                wrapped ui={false}
+                onClick = {toggleLikeClick} 
             />
             <Card.Content>
                 <Card.Header>{eBO.name}</Card.Header>
@@ -28,19 +27,18 @@ function BoardGameCard ({eBO, handleLikeUpdate}) {
                     <span className='date'>Joined in 2015</span>
                 </Card.Meta>
                 <Card.Description>
-                    Matthew is a musician living in Nashville.
+                    {eBO.description.substring(0,80)+"..."}
                 </Card.Description>
             </Card.Content>
-            <Card.Content extra fluid>
-                <a>
+            <Card.Content extra>
+                <p>
                     <Icon name='users' />
                     {eBO.playerCount}
-                </a>
-                <a>    </a>
-                <a>
+                </p>
+                <p>
                     <Icon name='clock'/>
                     {eBO.playTime}
-                </a>
+                </p>
             </Card.Content>
         </Card>
 

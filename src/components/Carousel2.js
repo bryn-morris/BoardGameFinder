@@ -5,26 +5,32 @@ import { Card, Icon, Image, grid} from 'semantic-ui-react'
 function Carousel2 ({boardGameArray}) {
 
     const [indexObj, setIndexObj] = useState({start: 0,end:3})
-    const [displayedCards, setDisplayedCards] = useState(boardGameArray)
-
-
-    console.log(displayedCards)
+    const [displayedCards, setDisplayedCards] = useState([])
 
     useEffect(()=>{
-        setDisplayedCards(boardGameArray)
-    },[boardGameArray])
+        setDisplayedCards(boardGameArray.slice(indexObj.start,indexObj.end))
+    },[boardGameArray, indexObj.start, indexObj.end])
 
     function rightArrow (eventObj) {
         
         const {start, end} = indexObj
-        setIndexObj({start: start+1, end: end+1});
-        setDisplayedCards(boardGameArray.slice(indexObj.start,indexObj.end))
+
+        const newStartIndex = start+1; 
+        const newEndIndex = end+1;
+
+        setIndexObj({start: newStartIndex, end: newEndIndex});
+        setDisplayedCards(boardGameArray.slice(newStartIndex,newEndIndex))
     }
 
     function leftArrow (eventObj) {
+
         const {start, end} = indexObj
-        setIndexObj({start: start-1, end: end-1});
-        setDisplayedCards(boardGameArray.slice(indexObj.start,indexObj.end))
+
+        const newStartIndex = start-1;
+        const newEndIndex = end-1;
+
+        setIndexObj({start: newStartIndex, end: newEndIndex});
+        setDisplayedCards(boardGameArray.slice(newStartIndex,newEndIndex))
     }
 
     return(
@@ -32,9 +38,9 @@ function Carousel2 ({boardGameArray}) {
             <button onClick = {leftArrow}>LeftArrow</button>
             {displayedCards.map((eBO)=>{
                 return(
-                    <div className = "ui grid container">
+                    <div key = {eBO.id} className = "ui grid container">
                         <Link to = {`/${eBO.id}`}>
-                            <Card className="three wide column" fluid>
+                            <Card className="three wide column" >
                             <Image src={eBO.image} alt = {eBO.name} wrapped ui={false} />
                                 <Card.Content>
                                     <Card.Header>{eBO.name}</Card.Header>
@@ -45,7 +51,7 @@ function Carousel2 ({boardGameArray}) {
                                         Matthew is a musician living in Nashville.
                                     </Card.Description>
                                 </Card.Content>
-                                <Card.Content extra fluid>
+                                <Card.Content extra>
                                     <p>
                                         <Icon name='users' />
                                         {eBO.playerCount}
