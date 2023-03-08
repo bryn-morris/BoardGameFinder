@@ -1,7 +1,5 @@
 import React, {useState} from "react";
-import {GrGroup} from "react-icons/gr"
-import {FaRegClock} from "react-icons/fa"
-import { Card, Icon, Image, Grid } from 'semantic-ui-react'
+import { Card, Icon, Image } from 'semantic-ui-react'
 
 function BoardGameCard ({eBO, handleFavoriteUpdate}) {
 
