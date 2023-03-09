@@ -22,7 +22,7 @@ function LandingPage({favoriteFilterArray}){
 
        <Route path = {`${match.url}:eBGID`}>
          <FeaturedCardDetail showDetails={showDetails}/>
-       </Route> 
+       </Route>
     </div>
     )
 }
