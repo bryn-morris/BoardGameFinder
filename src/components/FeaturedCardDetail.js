@@ -1,8 +1,10 @@
 import React, {useEffect, useState} from "react"
 import { useParams } from "react-router-dom";
+import { Header } from 'semantic-ui-react'
 
 
-function FeaturedCardDetail () {
+
+function FeaturedCardDetail ({showDetails}) {
 
     const {eBGID} = useParams();
 
@@ -18,11 +20,14 @@ function FeaturedCardDetail () {
 
     },[eBGID])
 
-    console.log(game)
+
+    console.log(showDetails);
 
     return(
-        <div name="TESTER">
-            {game.name}
+        <div className="featuredCardInfo">
+            <Header as="h3" textAlign="center" className="featuredCardHeader">
+                {showDetails ? <div>{game.name}<br /><h4>{game.shortdescription}</h4></div> : ""}
+            </Header>
         </div>
     )
 }

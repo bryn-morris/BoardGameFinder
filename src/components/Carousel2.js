@@ -4,7 +4,7 @@ import { Image,} from 'semantic-ui-react'
 import {MdOutlineArrowBackIosNew, MdOutlineArrowForwardIos} from 'react-icons/md';
 
 
-function Carousel2 ({favoriteFilterArray}) {
+function Carousel2 ({favoriteFilterArray, setShowDetails}) {
 
     console.log(favoriteFilterArray)
 
@@ -43,6 +43,8 @@ function Carousel2 ({favoriteFilterArray}) {
 
         setIndexObj({start: newStartIndex, end: newEndIndex});
         setDisplayedCards(favoriteFilterArray.slice(newStartIndex,newEndIndex))
+
+        setShowDetails(false);
     }
 
     function leftArrow (eventObj) {
@@ -54,10 +56,16 @@ function Carousel2 ({favoriteFilterArray}) {
 
         setIndexObj({start: newStartIndex, end: newEndIndex});
         setDisplayedCards(favoriteFilterArray.slice(newStartIndex,newEndIndex))
+
+        setShowDetails(false);
+    }
+
+    const handleCardClick = () => {
+        setShowDetails(true);
     }
 
     return(
-        <div className="ui grid middle aligned">
+        <div className="ui grid middle aligned carousel">
             <div className = "ui centered grid container">
                 <div className="column one wide centered middle aligned">
                     <div onClick = {leftArrow}><MdOutlineArrowBackIosNew size={70}/></div>
@@ -66,7 +74,7 @@ function Carousel2 ({favoriteFilterArray}) {
                             return(
                                 <div key = {eBO.id} className ="column four wide centered middle aligned">
                                     <Link to = {`/${eBO.id}`}>
-                                        <Image.Group size="medium">
+                                        <Image.Group size="medium" onClick={handleCardClick}>
                                             <Image src={eBO.image} alt = {eBO.name} wrapped ui={false} />
                                         </Image.Group>
                                     </Link>

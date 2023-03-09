@@ -9,7 +9,7 @@
       "shortdescription": "Root is a game of adventure and war in which 2 to 4 (1 to 6 with the 'Riverfolk' expansion) players battle for control of a vast wilderness. The nefarious Marquise de Cat has seized the great woodland, intent on harvesting its riches.",
       "playerCount": "2-4",
       "playTime": "60-90",
-      "favorited": true
+      "favorited": false
     },
     {
       "id": 2,
@@ -42,7 +42,7 @@
       "shortdescription": "Splendor is a fast-paced and addictive game of chip-collecting and card development. Players are merchants of the Renaissance trying to buy gem mines, means of transportation, shops; all in order to acquire the most prestige points.",
       "playerCount": "2-4",
       "playTime": "30-60",
-      "favorited": true
+      "favorited": false
     },
     {
       "id": 5,
@@ -75,7 +75,7 @@
       "shortdescription": "In this fast and goofy family game, players begin by simultaneously rummaging through the common warehouse, frantically trying to grab the most useful component tiles for building their space ship—all in real-time.",
       "playerCount": "2-4",
       "playTime": "20-30",
-      "favorited": false
+      "favorited": true
     },
     {
       "id": 8,
