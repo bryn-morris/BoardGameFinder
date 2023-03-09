@@ -1,7 +1,7 @@
 import React from "react";
-import {Modal, Image, Icon, Header} from 'semantic-ui-react'
+import {Modal, Image, Icon, Header, Segment} from 'semantic-ui-react'
 
-function BoardGameDetailsModal ({boardGameModalObj, setIsModalOpen, isModalOpen, handleFavoriteUpdate}) {
+function BoardGameDetailsModal ({boardGameModalObj, setIsModalOpen, isModalOpen, handleFavoriteUpdate, paragraphBreaker}) {
 
 // possible function for hitting favorite button on details card
 // and having it update db and dom
@@ -10,6 +10,11 @@ function BoardGameDetailsModal ({boardGameModalObj, setIsModalOpen, isModalOpen,
 //     handleFavoriteUpdate()
 
 // }
+
+const paragraphArray = paragraphBreaker(boardGameModalObj.longdescription)
+
+
+
 
 return(
     <div className="modalContainer">         
@@ -20,12 +25,13 @@ return(
         >
         <Modal.Header>{`${boardGameModalObj.name}`}</Modal.Header>
             <Modal.Content>
-                 <Image size = 'large' src = {boardGameModalObj.image} centered/>
+                 <Image size = 'huge' src = {boardGameModalObj.image} centered/>
                  <Icon name='users' size = "large" />{boardGameModalObj.playerCount}
                  <Icon name='clock' size = "large"/>{boardGameModalObj.playTime}
-                 <Header as='h3' block>
-                    {boardGameModalObj.longdescription}
-                 </Header>
+                 <Header as="h2" attached='top'> Description</Header>
+                 <Segment attached>
+                    {paragraphArray.map(eachStr =>  <p key={eachStr[0] + eachStr[1] + eachStr[2]}>{eachStr}</p>)}
+                 </Segment>
             </Modal.Content>
         </Modal>
     </div>)

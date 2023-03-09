@@ -45,7 +45,7 @@ function App() {
     }
 
     function paragraphBreaker (string) {
-        return string.split(".")
+        return string.split("\n")
     }
 
     const boardGameContainerPropsObj = {

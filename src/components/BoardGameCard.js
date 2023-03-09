@@ -34,7 +34,7 @@ function BoardGameCard ({eBO, handleFavoriteUpdate, handleDetailsObject, setIsMo
                                 <span className='date'>Joined in 2015</span>
                             </Card.Meta>
                             <Card.Description>
-                                {paragraphBreaker(eBO.longdescription)[0] + "." + paragraphBreaker(eBO.longdescription)[1] + "."}
+                                {paragraphBreaker(eBO.longdescription)[0]}
                             </Card.Description>
                         </Card.Content>
                         <Card.Content extra>

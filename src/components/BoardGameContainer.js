@@ -9,7 +9,18 @@ import BoardGameDetailsModal from './BoardGameDetailsModal'
 function BoardGameContainer ({boardGameArray, handleFormSubmission, handleFavoriteUpdate, paragraphBreaker}) {
 
     const [open, setOpen] = useState(false)
-    const [boardGameModalObj, setBoardGameModalObj] = useState("")
+    const [boardGameModalObj, setBoardGameModalObj] = useState(
+        {
+            id: 0,
+            name: "",
+            image: "",
+            likes: 0,
+            longdescription: "",
+            playerCount: "",
+            playTime: "",
+            favorited: false
+        }
+        )
     const [isModalOpen, setIsModalOpen] = useState(false)
 
     function handleDetailsObject(BGMID) {
@@ -18,7 +29,6 @@ function BoardGameContainer ({boardGameArray, handleFormSubmission, handleFavori
 
     return(
         <div className="modalParent">
-            <h1>Testing</h1>
             <div className="modalContainer">         
                 <Modal
                     onClose={() => setOpen(false)}
@@ -47,6 +57,7 @@ function BoardGameContainer ({boardGameArray, handleFormSubmission, handleFavori
                     setIsModalOpen={setIsModalOpen} 
                     isModalOpen={isModalOpen}
                     handleFavoriteUpdate = {handleFavoriteUpdate}
+                    paragraphBreaker={paragraphBreaker}
                 />
             </div>
             <div className = "cardContainer">

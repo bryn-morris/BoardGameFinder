@@ -26,7 +26,7 @@ function FeaturedCardDetail ({showDetails, paragraphBreaker}) {
     return(
         <div className="featuredCardInfo">
             <Header as="h3" textAlign="center" className="featuredCardHeader">
-                {showDetails ? <div>{game.name}<br /><h4>{paragraphBreaker(game.longdescription)[0] + "." + paragraphBreaker(game.longdescription)[1] + "."}</h4></div> : ""}
+                {showDetails ? <div>{game.name}<br /><h4>{paragraphBreaker(game.longdescription)[0]}</h4></div> : ""}
             </Header>
         </div>
     )
