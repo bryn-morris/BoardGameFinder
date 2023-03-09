@@ -1,7 +1,7 @@
 import React from "react";
 import BoardGameCard from "./BoardGameCard"
 import BoardGameForm from "./BoardGameForm"
-import { Button, Modal } from 'semantic-ui-react'
+import { Button, Modal} from 'semantic-ui-react'
 import {MdPostAdd} from "react-icons/md"
 
 
@@ -35,7 +35,7 @@ function BoardGameContainer ({boardGameArray, handleFormSubmission, handleFavori
                 </Modal>
             </div>
             <div>
-                <div className="ui grid container vertically padded">
+                <div className="ui grid fluid container vertically padded">
                     {boardGameArray.map((eBO) => {
                         return (
                             <BoardGameCard 

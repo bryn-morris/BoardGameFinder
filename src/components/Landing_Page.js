@@ -19,7 +19,7 @@ function LandingPage({favoriteFilterArray}){
         </Header.Subheader>
       </Header>
       <Carousel2 favoriteFilterArray={favoriteFilterArray} setShowDetails={setShowDetails}/>
-       {/* <Carousel boardGameArray={boardGameArray}/> */}
+
        <Route path = {`${match.url}:eBGID`}>
          <FeaturedCardDetail showDetails={showDetails}/>
        </Route> 

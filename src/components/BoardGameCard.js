@@ -17,28 +17,13 @@ function BoardGameCard ({eBO, handleFavoriteUpdate}) {
     }
 
     return (
-        <div>
-            <div>
-                <Modal
-                    onClose={() => setOpenCardModal(false)}
-                    open={openCardModal}
-                >
-                    <Modal.Header>Add a Board Game!</Modal.Header>
-                    <Modal.Content>
-                        Testing
-                    </Modal.Content>
-                    <Modal.Actions>
-                        Hello
-                    </Modal.Actions> 
-                </Modal>
-            </div>
-            <div>
+            <div className = "cardContainer">
                 <Card className="four wide column" onClick={handleBoardGameCardClick}>
                     <Image 
                         label={{ as: 'a', corner: 'right', icon: toggleFavorited ? ("heart") : ("heart outline") }}
                         src={eBO.image} 
                         alt = {eBO.name} 
-                        wrapped ui={false}
+                        wrapped
                         onClick = {handleFavoriteClick} 
                     />
                     <Card.Content>
@@ -62,7 +47,7 @@ function BoardGameCard ({eBO, handleFavoriteUpdate}) {
                     </Card.Content>
                 </Card>
             </div>
-        </div>
+        
 
 
 

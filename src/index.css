@@ -81,3 +81,11 @@ code {
 @keyframes slide {
   100% { left: 0; }
 }
+
+.cardContainer {
+  margin: 10px;
+}
+
+.ui.card.four.wide.column {
+  height: 100%;
+}
