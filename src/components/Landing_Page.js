@@ -10,6 +10,7 @@ function LandingPage({favoriteFilterArray, paragraphBreaker}){
     const [showDetails, setShowDetails] = useState(false)
 
     const match = useRouteMatch();
+    
     return(
     <div>
       <Header as="h1" textAlign="center" className="landingPageHeader">

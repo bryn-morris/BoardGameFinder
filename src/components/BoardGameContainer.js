@@ -8,7 +8,7 @@ import BoardGameDetailsModal from './BoardGameDetailsModal'
 
 function BoardGameContainer ({boardGameArray, handleFormSubmission, handleFavoriteUpdate, paragraphBreaker}) {
 
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false);
     const [boardGameModalObj, setBoardGameModalObj] = useState(
         {
             id: 0,
@@ -27,9 +27,16 @@ function BoardGameContainer ({boardGameArray, handleFormSubmission, handleFavori
         setBoardGameModalObj(boardGameArray.find(eachObj => eachObj.id === BGMID))
     }
 
+    function handleButtonClick() {
+        setOpen(true)
+    }
+
+
     return(
         <div className="modalParent">
-            <div className="modalContainer">         
+            <div className = "whatintarnation"></div>
+            <div className="modalContainer">    
+                 
                 <Modal
                     onClose={() => setOpen(false)}
                     onOpen={() => setOpen(true)}
