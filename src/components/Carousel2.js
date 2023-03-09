@@ -6,15 +6,13 @@ import {MdOutlineArrowBackIosNew, MdOutlineArrowForwardIos} from 'react-icons/md
 
 function Carousel2 ({favoriteFilterArray, setShowDetails}) {
 
-    console.log(favoriteFilterArray)
-
     const [indexObj, setIndexObj] = useState({start: 0,end:3})
     const [displayedCards, setDisplayedCards] = useState([])
+    const [isArrow, setIsArrow] = useState({leftArrow:true, rightArrow:true})
 
     useEffect(()=>{
         setDisplayedCards(favoriteFilterArray.slice(indexObj.start,indexObj.end))
     },[favoriteFilterArray, indexObj.start, indexObj.end])
-
 
     function rightArrow (eventObj) {
         
