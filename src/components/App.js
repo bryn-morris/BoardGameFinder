@@ -51,7 +51,7 @@ function App() {
     }
 
   return (
-  <div>
+  <div className="siteContainer">
     <Header />
     <Switch>
       <Route path="/boardgamecontainer">
