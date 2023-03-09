@@ -12,32 +12,19 @@ code {
     monospace;
 }
 
-.boardGameCard {
-  text-align: center;
-  border: grey solid 1px;
-  padding: 1rem;
-  width: 20rem;
-  height: 35rem;
-  display: inline-grid;
-  margin: 1rem 2rem;
-  box-shadow: 3px 4px #567189;
-  border-radius: 5px;
-  background-color: white;
-}
-
-.cardImage {
-  width: 275px;
-  height: 225px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  object-fit: contain;
-}
-
 .modalbutton {
-  position: absolute;
-  top: 4%;
-  right: 4%;
+  position: sticky;
+  top: 0%;
+}
+
+.modalContainer {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.modalParent {
+  top: 30%
 }
 
 .footer {
@@ -46,9 +33,9 @@ code {
   width: 100%;
 }
 
-.footerText {
+/* .footerText {
   text-transform: lowercase;
-}
+} */
 
 .featuredCardInfo {
   position: absolute;
