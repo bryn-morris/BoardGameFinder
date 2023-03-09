@@ -17,36 +17,34 @@ function BoardGameCard ({eBO, handleFavoriteUpdate}) {
     }
 
     return (
-            <div className = "cardContainer">
-                <Card className="four wide column" onClick={handleBoardGameCardClick}>
-                    <Image 
-                        label={{ as: 'a', corner: 'right', icon: toggleFavorited ? ("heart") : ("heart outline") }}
-                        src={eBO.image} 
-                        alt = {eBO.name} 
-                        wrapped
-                        onClick = {handleFavoriteClick} 
-                    />
-                    <Card.Content>
-                        <Card.Header>{eBO.name}</Card.Header>
-                        <Card.Meta>
-                            <span className='date'>Joined in 2015</span>
-                        </Card.Meta>
-                        <Card.Description>
-                            {eBO.shortdescription}
-                        </Card.Description>
-                    </Card.Content>
-                    <Card.Content extra>
-                        <p>
-                            <Icon name='users' />
-                            {eBO.playerCount}
-                        </p>
-                        <p>
-                            <Icon name='clock'/>
-                            {eBO.playTime}
-                        </p>
-                    </Card.Content>
-                </Card>
-            </div>
+                    <Card onClick={handleBoardGameCardClick}>
+                        <Image 
+                            label={{ as: 'a', corner: 'right', icon: toggleFavorited ? ("heart") : ("heart outline") }}
+                            src={eBO.image} 
+                            alt = {eBO.name} 
+                            wrapped
+                            onClick = {handleFavoriteClick} 
+                        />
+                        <Card.Content>
+                            <Card.Header>{eBO.name}</Card.Header>
+                            <Card.Meta>
+                                <span className='date'>Joined in 2015</span>
+                            </Card.Meta>
+                            <Card.Description>
+                                {eBO.shortdescription}
+                            </Card.Description>
+                        </Card.Content>
+                        <Card.Content extra>
+                            <p>
+                                <Icon name='users' />
+                                {eBO.playerCount}
+                            </p>
+                            <p>
+                                <Icon name='clock'/>
+                                {eBO.playTime}
+                            </p>
+                        </Card.Content>
+                    </Card>
         
 
 
