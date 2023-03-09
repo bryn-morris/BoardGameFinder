@@ -1,23 +1,26 @@
 import React, {useState} from "react";
-import { Card, Icon, Image, Modal } from 'semantic-ui-react'
+import { Card, Icon, Image, Button } from 'semantic-ui-react'
 
-function BoardGameCard ({eBO, handleFavoriteUpdate}) {
+function BoardGameCard ({eBO, handleFavoriteUpdate, handleDetailsObject, setIsModalOpen, paragraphBreaker}) {
 
     const [toggleFavorited, setToggleFavorited] = useState(eBO.favorited)
-    const [openCardModal, setOpenCardModal] = useState(false);
-    
+
     const handleFavoriteClick = (eventObj) => {
         const isFavorited = !toggleFavorited;
         setToggleFavorited(isFavorited)
         handleFavoriteUpdate(eBO.id, isFavorited)
     }
+
     
-    const handleBoardGameCardClick = () => {
-        setOpenCardModal(true)
+
+    function handleDetailsClick () {
+
+        handleDetailsObject(eBO.id)
+        setIsModalOpen(true)
     }
 
     return (
-                    <Card onClick={handleBoardGameCardClick}>
+                    <Card>
                         <Image 
                             label={{ as: 'a', corner: 'right', icon: toggleFavorited ? ("heart") : ("heart outline") }}
                             src={eBO.image} 
@@ -31,7 +34,7 @@ function BoardGameCard ({eBO, handleFavoriteUpdate}) {
                                 <span className='date'>Joined in 2015</span>
                             </Card.Meta>
                             <Card.Description>
-                                {eBO.shortdescription}
+                                {paragraphBreaker(eBO.longdescription)[0] + "." + paragraphBreaker(eBO.longdescription)[1] + "."}
                             </Card.Description>
                         </Card.Content>
                         <Card.Content extra>
@@ -43,26 +46,12 @@ function BoardGameCard ({eBO, handleFavoriteUpdate}) {
                                 <Icon name='clock'/>
                                 {eBO.playTime}
                             </p>
+                            <p>
+                                <Button onClick = {handleDetailsClick}>More Details</Button>
+                            </p>
                         </Card.Content>
                     </Card>
-        
-
-
-
-        // <div className = "boardGameCard">
-        //     <img src={eBO.image} alt = {eBO.name} className = "cardImage"/>
-        //     <h3>{eBO.name}</h3>
-        //     <p>
-        //         {isLiked ? (<AiFillHeart onClick = {toggleLikeClick}/>) : (<AiOutlineHeart onClick = {toggleLikeClick}/>)}
-        //         {eBO.likes}
-        //         {(eBO.likes === 1) ? " like" : " likes" }
-        //     </p>
-        //     <p><GrGroup /> {eBO.playerCount}</p>
-        //     <p><FaRegClock /> {eBO.playTime}</p>
-        // </div>
     )
 }
 
 export default BoardGameCard;
-
-// Possibly Look towards replacing the icon in the ternary with a more thematic representation 

@@ -1,13 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
 import BoardGameCard from "./BoardGameCard"
 import BoardGameForm from "./BoardGameForm"
 import { Button, Modal, Card} from 'semantic-ui-react'
 import {MdPostAdd} from "react-icons/md"
+import BoardGameDetailsModal from './BoardGameDetailsModal'
 
 
-function BoardGameContainer ({boardGameArray, handleFormSubmission, handleFavoriteUpdate}) {
+function BoardGameContainer ({boardGameArray, handleFormSubmission, handleFavoriteUpdate, paragraphBreaker}) {
 
-    const [open, setOpen] = React.useState(false)
+    const [open, setOpen] = useState(false)
+    const [boardGameModalObj, setBoardGameModalObj] = useState("")
+    const [isModalOpen, setIsModalOpen] = useState(false)
+
+    function handleDetailsObject(BGMID) {
+        setBoardGameModalObj(boardGameArray.find(eachObj => eachObj.id === BGMID))
+    }
 
     return(
         <div className="modalParent">
@@ -34,6 +41,14 @@ function BoardGameContainer ({boardGameArray, handleFormSubmission, handleFavori
                     </Modal.Actions> 
                 </Modal>
             </div>
+            <div>
+                <BoardGameDetailsModal 
+                    boardGameModalObj={boardGameModalObj} 
+                    setIsModalOpen={setIsModalOpen} 
+                    isModalOpen={isModalOpen}
+                    handleFavoriteUpdate = {handleFavoriteUpdate}
+                />
+            </div>
             <div className = "cardContainer">
                 <Card.Group itemsPerRow={4}>
                     {boardGameArray.map((eBO) => {
@@ -42,6 +57,9 @@ function BoardGameContainer ({boardGameArray, handleFormSubmission, handleFavori
                                 key = {eBO.id} 
                                 eBO = {eBO}
                                 handleFavoriteUpdate = {handleFavoriteUpdate}
+                                handleDetailsObject = {handleDetailsObject}
+                                setIsModalOpen = {setIsModalOpen}
+                                paragraphBreaker = {paragraphBreaker}
                             />
                         )
                     }

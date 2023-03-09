@@ -15,6 +15,7 @@ code {
 .modalbutton {
   position: sticky;
   top: 0%;
+  left: 4%;
 }
 
 .modalContainer {
@@ -24,14 +25,16 @@ code {
 }
 
 .modalParent {
-  top: 30%
+  top: 30%;
+  display:flex;
+  flex-direction: column;
 }
 
 .footer {
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   width: 100%;
-  z-index: 5;
+  /* z-index: 5; */
 }
 
 /* .footerText {
@@ -92,3 +95,14 @@ code {
 /* .ui.card.four.wide.column {
   height: 100%;
 } */
+
+.siteContainer {
+  display:flex;
+  flex-direction: column;
+}
+
+.otherSiteContainer{
+  display:flex;
+  flex-direction: column;
+}
+

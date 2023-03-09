@@ -5,7 +5,7 @@ import FeaturedCardDetail from "./FeaturedCardDetail";
 import { Header } from 'semantic-ui-react'
 
 
-function LandingPage({favoriteFilterArray}){
+function LandingPage({favoriteFilterArray, paragraphBreaker}){
 
     const [showDetails, setShowDetails] = useState(false)
 
@@ -21,7 +21,7 @@ function LandingPage({favoriteFilterArray}){
       <Carousel2 favoriteFilterArray={favoriteFilterArray} setShowDetails={setShowDetails}/>
 
        <Route path = {`${match.url}:eBGID`}>
-         <FeaturedCardDetail showDetails={showDetails}/>
+         <FeaturedCardDetail showDetails={showDetails} paragraphBreaker = {paragraphBreaker}/>
        </Route>
     </div>
     )

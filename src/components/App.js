@@ -44,23 +44,35 @@ function App() {
         addBoardGameToState();
     }
 
+    function paragraphBreaker (string) {
+        return string.split(".")
+    }
+
     const boardGameContainerPropsObj = {
       boardGameArray: boardGameArray,
       handleFavoriteUpdate: handleFavoriteUpdate,
       handleFormSubmission: handleFormSubmission,
+      paragraphBreaker: paragraphBreaker
+    }
+
+    const landingPagePropsObj = {
+        favoriteFilterArray : favoriteFilterArray,
+        paragraphBreaker: paragraphBreaker
     }
 
   return (
   <div className="siteContainer">
-    <Header />
-    <Switch>
-      <Route path="/boardgamecontainer">
-          <BoardGameContainer {...boardGameContainerPropsObj}/>
-      </Route>
-      <Route path ="/"> 
-          <LandingPage favoriteFilterArray = {favoriteFilterArray}/>
-      </Route>
-    </Switch>
+    <div className ="otherSiteContainer">
+        <Header />
+        <Switch>
+            <Route path="/boardgamecontainer">
+                <BoardGameContainer {...boardGameContainerPropsObj}/>
+            </Route>
+            <Route path ="/"> 
+                <LandingPage {...landingPagePropsObj}/>
+            </Route>
+        </Switch>
+    </div>
     <Footer />
   </div>
   )

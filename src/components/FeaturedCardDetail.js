@@ -4,7 +4,7 @@ import { Header } from 'semantic-ui-react'
 
 
 
-function FeaturedCardDetail ({showDetails}) {
+function FeaturedCardDetail ({showDetails, paragraphBreaker}) {
 
     const {eBGID} = useParams();
 
@@ -26,7 +26,7 @@ function FeaturedCardDetail ({showDetails}) {
     return(
         <div className="featuredCardInfo">
             <Header as="h3" textAlign="center" className="featuredCardHeader">
-                {showDetails ? <div>{game.name}<br /><h4>{game.shortdescription}</h4></div> : ""}
+                {showDetails ? <div>{game.name}<br /><h4>{paragraphBreaker(game.longdescription)[0] + "." + paragraphBreaker(game.longdescription)[1] + "."}</h4></div> : ""}
             </Header>
         </div>
     )

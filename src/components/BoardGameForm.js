@@ -28,7 +28,7 @@ function BoardGameForm({handleFormSubmission, setOpen}) {
 
     return (
         <div>
-            <form id = "newBoardGameSubmit" onSubmit={handleFormSubmit} class ="ui form">
+            <form id = "newBoardGameSubmit" onSubmit={handleFormSubmit} className ="ui form">
                 <div className="field">
                     <label>Boardgame Name</label>
                     <input onChange={handleFormInputChange} name="name" type="text" value={formObject.name} placeholder="Name"/> <br />
