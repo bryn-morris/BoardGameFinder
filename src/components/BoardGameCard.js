@@ -22,7 +22,7 @@ function BoardGameCard ({eBO, handleFavoriteUpdate, handleDetailsObject, setIsMo
     return (
                     <Card>
                         <Image 
-                            label={{ as: 'a', corner: 'right', icon: toggleFavorited ? ("heart") : ("heart outline") }}
+                            label={{ as: 'a', corner: 'right', icon: toggleFavorited ? ("heart red") : ("heart outline")}}
                             src={eBO.image} 
                             alt = {eBO.name} 
                             wrapped
@@ -31,7 +31,7 @@ function BoardGameCard ({eBO, handleFavoriteUpdate, handleDetailsObject, setIsMo
                         <Card.Content>
                             <Card.Header>{eBO.name}</Card.Header>
                             <Card.Meta>
-                                <span className='date'>Joined in 2015</span>
+                                <span className='date'>{eBO.yearReleased}</span>
                             </Card.Meta>
                             <Card.Description>
                                 {paragraphBreaker(eBO.longdescription)[0]}

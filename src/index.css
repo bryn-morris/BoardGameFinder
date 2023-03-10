@@ -109,3 +109,18 @@ code {
 .whatintarnation{
   height:80px;
 }
+
+.logoText {
+  font-family: 'Rampart One', cursive;
+  font-size: 36px;
+}
+
+.logoImage {
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 0px;
+}
+
+/* .headerContainer {
+  background-color: #9FC9F3;
+} */

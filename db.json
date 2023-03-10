@@ -5,10 +5,11 @@
       "name": "Root",
       "image": "https://cf.geekdo-images.com/JUAUWaVUzeBgzirhZNmHHw__imagepage/img/ZF-dta5ffawuKAkAt2LB-QTIv5M=/fit-in/900x600/filters:no_upscale():strip_icc()/pic4254509.jpg",
       "likes": 3,
-      "longdescription": "Root is a game of adventure and war in which 2 to 4 (1 to 6 with the 'Riverfolk' expansion) players battle for control of a vast wilderness. The nefarious Marquise de Cat has seized the great woodland, intent on harvesting its riches. \n Under her rule, the many creatures of the forest have banded together.  The stage is set for a contest that will decide the fate of the great woodland. \n It is up to the players to decide which group will ultimately take root. Explore the board, fight other factions, and work towards achieving your hidden goal. \n In Root, players drive the narrative, and the differences between each role create an unparalleled level of interaction and replayability. Leder Games invites you and your family to explore the fantastic world of Root! —description from the publisher",
+      "longdescription": "Root is a game of adventure and war in which 2 to 4 (1 to 6 with the 'Riverfolk' expansion) players battle for control of a vast wilderness. The nefarious Marquise de Cat has seized the great woodland, intent on harvesting its riches. \n Under her rule, the many creatures of the forest have banded together.  The stage is set for a contest that will decide the fate of the great woodland. \n It is up to the players to decide which group will ultimately take root. Explore the board, fight other factions, and work towards achieving your hidden goal. \n In Root, players drive the narrative, and the differences between each role create an unparalleled level of interaction and replayability. Leder Games invites you and your family to explore the fantastic world of Root!",
       "playerCount": "2-4",
       "playTime": "60-90",
-      "favorited": true
+      "favorited": false,
+      "yearReleased": "2018"
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "longdescription": "Ticket to Ride is a cross-country train adventure game. Players collect train cards that enable them to claim railway routes connecting cities throughout North America. The longer the routes, the more points they earn. \n Additional points come to those who can fulfill their Destination Tickets by connecting two distant cities, and to the player who builds the longest continuous railway. So climb aboard for some railroading fun and adventure. \n You've got a Ticket to Ride!",
       "playerCount": "2-5",
       "playTime": "45-90",
-      "favorited": true
+      "favorited": true,
+      "yearReleased": "2004"
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "longdescription": "Patchwork is a form of needlework that involves sewing together pieces of fabric into a larger design. To create a beautiful quilt, however, requires effort and time, but the available patches just do not want to fit together. So choose your patches carefully and keep a healthy supply of buttons to not only finish your quilt, but to make it better and more beautiful than your opponent's.",
       "playerCount": "2",
       "playTime": "15-30",
-      "favorited": false
+      "favorited": true,
+      "yearReleased": "2014"
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "longdescription": "Splendor is a fast-paced and addictive game of chip-collecting and card development. Players are merchants of the Renaissance trying to buy gem mines, means of transportation, shops; all in order to acquire the most prestige points. \n If you're wealthy enough, you might even receive a visit from a noble at some point, which of course will further increase your prestige. All of the cards you buy increase your wealth as they give you a permanent gem bonus for later buys; some of the cards also give you prestige points. \n In order to win the game, you must reach 15 prestige points before your opponents do.",
       "playerCount": "2-4",
       "playTime": "30-60",
-      "favorited": false
+      "favorited": false,
+      "yearReleased": "2014"
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "longdescription": "Azul captures the beautiful aesthetics of Moorish art in a contemporary board game. Players compete as artisans decorating the walls of the royal Palace of Dvora. By carefully drafting the correct quantity and style of tiles, the most clever of artisans plan ahead to maximize the beauty of their work (not to mention their scores!) while ensuring they wasted no supplies in the process.",
       "playerCount": "2-4",
       "playTime": "30-60",
-      "favorited": true
+      "favorited": true,
+      "yearReleased": "2017"
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "longdescription": "The women and men of your expedition build the first two settlements. Fortunately, the land is rich in natural resources. You build roads and new settlements that eventually become cities. \n Will you succeed in gaining supremacy on Catan? \n Barter trade dominates the scene. Some resources you have in abundance, other resources are scarce. Ore for wool, brick for lumber - you trade according to what is needed for your current building projects. \n Proceed strategically! \n If you found your settlements in the right places and skillfully trade your resources, then the odds will be in your favor. But your opponents are smart too.",
       "playerCount": "3-4",
       "playTime": "45-90",
-      "favorited": false
+      "favorited": false,
+      "yearReleased": "1995"
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "longdescription": "In this fast and goofy family game, players begin by simultaneously rummaging through the common warehouse, frantically trying to grab the most useful component tiles for building their space ship—all in real-time. Once the ships are launched, players will encounter dangerous situations while vying for financial opportunities—each hoping to gain the most valuable cargo and finish with as much of their ship still intact as possible. \n Of course, that's easier said than done since many hazards will send pieces of your ship, your cargo, and your crew hurling into the depths of space. The goal is to survive the trek (hopefully with at least some of your crew and ship intact) and have at least one credit by the end of the game (a profit, yay!). \n Players earn credits by delivering goods, defeating pirates, having the best-looking ship, and reaching their destination before the others.",
       "playerCount": "2-4",
       "playTime": "20-30",
-      "favorited": true
+      "favorited": true,
+      "yearReleased": "2007"
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
       "longdescription": "In Pandemic, several virulent diseases have broken out simultaneously all over the world! The players are disease-fighting specialists whose mission is to treat disease hotspots while researching cures for each of four plagues before they get out of hand. \n The game board depicts several major population centers on Earth. On each turn, a player can use up to four actions to travel between cities, treat infected populaces, discover a cure, or build a research station. A deck of cards provides the players with these abilities, but sprinkled throughout this deck are Epidemic! cards that accelerate and intensify the diseases' activity. \n A second, separate deck of cards controls the 'normal' spread of the infections. Taking a unique role within the team, players must plan their strategy to mesh with their specialists' strengths in order to conquer the diseases.",
       "playerCount": "2-4",
       "playTime": "45-60",
-      "favorited": false
+      "favorited": false,
+      "yearReleased": "2008"
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
       "longdescription": "In Small World, players vie for conquest and control of a world that is simply too small to accommodate them all. Designed by Philippe Keyaerts as a fantasy follow-up to his award-winning Vinci, Small World is inhabited by a zany cast of characters such as dwarves, wizards, amazons, giants, orcs, and even humans, who use their troops to occupy territory and conquer adjacent lands in order to push the other races off the face of the earth. \n Picking the right combination from the 14 different fantasy races and 20 unique special powers, players rush to expand their empires - often at the expense of weaker neighbors. \n Yet they must also know when to push their own over-extended civilization into decline and ride a new one to victory! \n On each turn, you either use the multiple tiles of your chosen race (type of creatures) to occupy adjacent (normally) territories - possibly defeating weaker enemy races along the way, or you give up on your race letting it go into decline. A race in decline is designated by flipping the tiles over to their black-and-white side. \n At the end of your turn, you score one point (coin) for each territory your races occupy. You may have one active race and one race in decline on the board at the same time. Your occupation total can vary depending on the special abilities of your race and the territories they occupy. \n After the final round, the player with the most coins wins.",
       "playerCount": "3-4",
       "playTime": "40-80",
-      "favorited": false
+      "favorited": false,
+      "yearReleased": "2009"
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
       "longdescription": "In the 2400s, mankind begins to terraform the planet Mars. Giant corporations, sponsored by the World Government on Earth, initiate huge projects to raise the temperature, the oxygen level, and the ocean coverage until the environment is habitable. \n In Terraforming Mars, you play one of those corporations and work together in the terraforming process, but compete for getting victory points that are awarded not only for your contribution to the terraforming, but also for advancing human infrastructure throughout the solar system, and doing other commendable things.",
       "playerCount": "1-5",
       "playTime": "120",
-      "favorited": false
+      "favorited": false,
+      "yearReleased": "2016"
     },
     {
       "id": 11,
@@ -108,7 +118,8 @@
       "longdescription": "Go down in the dungeon. Kill everything you meet. Backstab your friends and steal their stuff. Grab the treasure and run. \n Admit it. You love it. \n This award-winning card game, designed by Steve Jackson, captures the essence of the dungeon experience... with none of that stupid roleplaying stuff. You and your friends compete to kill monsters and grab magic items. And what magic items! \n Don the Horny Helmet and the Boots of Butt-Kicking. Wield the Staff of Napalm... or maybe the Chainsaw of Bloody Dismemberment. Start by slaughtering the Potted Plant and the Drooling Slime, and work your way up to the Plutonium Dragon... And it's illustrated by John Kovalic! \n Fast-playing and silly, Munchkin can reduce any roleplaying group to hysteria. And, while they're laughing, you can steal their stuff.",
       "playerCount": "3-6",
       "playTime": "60-120",
-      "favorited": true
+      "favorited": true,
+      "yearReleased": "2001"
     }
   ]
 }

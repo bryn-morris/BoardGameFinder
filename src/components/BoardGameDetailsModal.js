@@ -25,10 +25,10 @@ return(
         >
         <Modal.Header>{`${boardGameModalObj.name}`}</Modal.Header>
             <Modal.Content>
-                 <Image size = 'huge' src = {boardGameModalObj.image} centered/>
+                 <Image size = 'huge' centered src = {boardGameModalObj.image}/>
                  <Icon name='users' size = "large" />{boardGameModalObj.playerCount}
                  <Icon name='clock' size = "large"/>{boardGameModalObj.playTime}
-                 <Header as="h2" attached='top'> Description</Header>
+                 <Header as="h3" attached='top'> Description</Header>
                  <Segment attached>
                     {paragraphArray.map(eachStr =>  <p key={eachStr[0] + eachStr[1] + eachStr[2]}>{eachStr}</p>)}
                  </Segment>

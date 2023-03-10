@@ -48,6 +48,18 @@ function App() {
         return string.split("\n")
     }
 
+    // code for search
+    // const [searchString, setSearchString] = useState("");
+
+    // const searchedValue = aNewStringFromSearchBar => {
+    //   console.log(aNewStringFromSearchBar);
+    //   setSearchString(aNewStringFromSearchBar);
+    // }
+  
+    // const searchedBoardGames = boardGameArray.filter(eachBO => {
+    //   return eachBO.name.toLowerCase().includes(searchString.toLowerCase());
+    // })
+
     const boardGameContainerPropsObj = {
       boardGameArray: boardGameArray,
       handleFavoriteUpdate: handleFavoriteUpdate,
@@ -59,6 +71,7 @@ function App() {
         favoriteFilterArray : favoriteFilterArray,
         paragraphBreaker: paragraphBreaker
     }
+
 
   return (
   <div className="siteContainer">

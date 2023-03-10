@@ -30,23 +30,23 @@ function BoardGameForm({handleFormSubmission, setOpen}) {
         <div>
             <form id = "newBoardGameSubmit" onSubmit={handleFormSubmit} className ="ui form">
                 <div className="field">
-                    <label>Boardgame Name</label>
+                    <label>Board Game Name:</label>
                     <input onChange={handleFormInputChange} name="name" type="text" value={formObject.name} placeholder="Name"/> <br />
                 </div>
                 <div className="field">
-                    <label>BoardGame Image</label>
+                    <label>Board Game Image:</label>
                     <input onChange={handleFormInputChange} name="image" type="text" value={formObject.image} placeholder="Image"/> <br />
                 </div>
                 <div className="field">
-                    <label>BoardGame Description</label>
+                    <label>Board Game Description:</label>
                     <textarea onChange={handleFormInputChange} name="description" type="text" value={formObject.description} placeholder="Description"></textarea>
                 </div>
                 <div className="field">
-                    <label>BoardGame PlayerCount:</label>
+                    <label>Board Game Player Count:</label>
                     <input onChange={handleFormInputChange} name="playerCount" type="text" value={formObject.playerCount} placeholder="Player Count"/> <br />
                 </div>
                 <div className="field">
-                    <label>BoardGame PlayTime:</label>
+                    <label>Board Game Play Time:</label>
                     <input onChange={handleFormInputChange} name="playTime" type="text" value={formObject.playTime} placeholder="Play Time"/> <br />
                 </div>
             </form>
