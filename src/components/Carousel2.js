@@ -60,17 +60,17 @@ function Carousel2 ({favoriteFilterArray, setShowDetails}) {
                 <div className="column one wide centered middle aligned">
                     <div onClick = {leftArrow}>{isArrow.leftArrow ? <MdOutlineArrowBackIosNew size={70}/>: null }</div>
                 </div>
-                        {displayedCards.map((eBO)=>{
-                            return(
-                                <div key = {eBO.id} className ="column four wide centered middle aligned">
-                                    <Link to = {`/${eBO.id}`}>
-                                        <Image.Group size="medium" onClick={handleCardClick}>
-                                            <Image src={eBO.image} alt = {eBO.name} wrapped ui={false} />
-                                        </Image.Group>
-                                    </Link>
-                                </div>
-                                )})
-                        }
+                {displayedCards.map((eBO)=>{
+                    return(
+                        <div key = {eBO.id} className ="column four wide centered middle aligned">
+                            <Link to = {`/${eBO.id}`}>
+                                <Image.Group size="medium" onClick={handleCardClick}>
+                                    <Image src={eBO.image} alt = {eBO.name} wrapped ui={false} />
+                                </Image.Group>
+                            </Link>
+                        </div>
+                        )})
+                }
                 <div className ="column one wide centered middle aligned">
                     <div onClick = {rightArrow}>{isArrow.rightArrow ? <MdOutlineArrowForwardIos size={70}/>: null }</div>
                 </div>
