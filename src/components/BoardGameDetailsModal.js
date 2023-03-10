@@ -1,5 +1,5 @@
 import React from "react";
-import {Modal, Image, Icon, Header, Segment} from 'semantic-ui-react'
+import {Modal, Image, Icon, Header, Segment, Divider} from 'semantic-ui-react'
 
 function BoardGameDetailsModal ({boardGameModalObj, setIsModalOpen, isModalOpen, handleFavoriteUpdate, paragraphBreaker}) {
 
@@ -25,9 +25,11 @@ return(
         >
         <Modal.Header>{`${boardGameModalObj.name}`}</Modal.Header>
             <Modal.Content>
-                 <Image size = 'huge' centered src = {boardGameModalObj.image}/>
+                 <Image size = 'large' centered src = {boardGameModalObj.image}/>
+                 <Divider />
                  <Icon name='users' size = "large" />{boardGameModalObj.playerCount}
                  <Icon name='clock' size = "large"/>{boardGameModalObj.playTime}
+                 <Divider />
                  <Header as="h3" attached='top'> Description</Header>
                  <Segment attached>
                     {paragraphArray.map(eachStr =>  <p key={eachStr[0] + eachStr[1] + eachStr[2]}>{eachStr}</p>)}

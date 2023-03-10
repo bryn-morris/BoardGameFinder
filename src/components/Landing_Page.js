@@ -13,6 +13,7 @@ function LandingPage({favoritedArray, paragraphBreaker}){
     
     return(
     <div>
+      <p></p>
       <Header as="h1" textAlign="center" className="landingPageHeader">
         Your Favorite Board Games
         <Header.Subheader>
