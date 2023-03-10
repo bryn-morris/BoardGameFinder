@@ -8,10 +8,9 @@ function Header({searchedValue}) {
 
     const handleItemClick = (e, { name }) => setActive({ activeItem: name })
 
-    // more code for search
-    // const handleSearchInputChange = (e) => {
-    //     searchedValue(e.target.value);
-    //   }
+    const handleSearchInputChange = (e) => {
+        searchedValue(e.target.value);
+      }
 
     return (
         <div className="headerContainer">
@@ -41,7 +40,7 @@ function Header({searchedValue}) {
                 />
                 <Menu.Menu position='right'>
                     <Menu.Item>
-                        <Input icon='search' placeholder='Search...' />
+                        <Input onChange={handleSearchInputChange} icon='search' placeholder='Search...' />
                     </Menu.Item>
                 </Menu.Menu>
             </Menu>

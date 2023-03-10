@@ -70,20 +70,21 @@ function App() {
         return string.split("\n")
     }
 
-    // code for search
-    // const [searchString, setSearchString] = useState("");
 
-    // const searchedValue = aNewStringFromSearchBar => {
-    //   console.log(aNewStringFromSearchBar);
-    //   setSearchString(aNewStringFromSearchBar);
-    // }
+    const [searchString, setSearchString] = useState("");
+
+    const searchedValue = aNewStringFromSearchBar => {
+      console.log(aNewStringFromSearchBar);
+      setSearchString(aNewStringFromSearchBar);
+    }
   
-    // const searchedBoardGames = boardGameArray.filter(eachBO => {
-    //   return eachBO.name.toLowerCase().includes(searchString.toLowerCase());
-    // })
+    const searchedBoardGames = boardGameArray.filter(eachBO => {
+      return eachBO.name.toLowerCase().includes(searchString.toLowerCase());
+    })
+
 
     const boardGameContainerPropsObj = {
-      boardGameArray: boardGameArray,
+      boardGameArray: searchedBoardGames,
       handleFavoriteUpdate: handleFavoriteUpdate,
       handleFormSubmission: handleFormSubmission,
       paragraphBreaker: paragraphBreaker
@@ -98,7 +99,7 @@ function App() {
   return (
   <div className="siteContainer">
     <div className ="otherSiteContainer">
-        <Header />
+        <Header searchedValue={searchedValue}/>
         <Switch>
             <Route path="/boardgamecontainer">
                 <BoardGameContainer {...boardGameContainerPropsObj}/>
