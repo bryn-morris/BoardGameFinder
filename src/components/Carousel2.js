@@ -41,7 +41,7 @@ function Carousel2 ({favoriteFilterArray, setShowDetails}) {
 
         setIsArrow({...isArrow, rightArrow: true})
 
-        if (start === 0) {
+        if (start === 1) {
             setIsArrow({...isArrow, leftArrow: false})
         }
 

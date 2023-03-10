@@ -28,6 +28,7 @@ function App() {
     }
 
     const favoriteFilterArray = boardGameArray.filter(eachBoardGame=>eachBoardGame.favorited)
+    favoriteFilterArray.unshift({})
     
 
     const handleFormSubmission = newFormObject => {
