@@ -6,7 +6,7 @@ function BoardGameForm({handleFormSubmission, setOpen}) {
         name: "",
         image: "",
         likes: "",
-        description: "",
+        longdescription: "",
         playerCount: "",
         playTime: ""
     }
@@ -39,7 +39,7 @@ function BoardGameForm({handleFormSubmission, setOpen}) {
                 </div>
                 <div className="field">
                     <label>Board Game Description:</label>
-                    <textarea onChange={handleFormInputChange} name="description" type="text" value={formObject.description} placeholder="Description"></textarea>
+                    <textarea onChange={handleFormInputChange} name="longdescription" type="text" value={formObject.longdescription} placeholder="Description"></textarea>
                 </div>
                 <div className="field">
                     <label>Board Game Player Count:</label>

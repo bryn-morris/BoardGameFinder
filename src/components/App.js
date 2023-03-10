@@ -8,8 +8,8 @@ import LandingPage from "./Landing_Page"
 
 function App() {
 
-  let history = useHistory
-  const keyPressHandler = (e)
+//   let history = useHistory
+//   const keyPressHandler = (e)
 
 
   const [boardGameArray, setBoardGameArray] = useState([]);
@@ -37,7 +37,7 @@ function App() {
                     return newFavoritedArray
                 })
             })
-        },[])
+        },[boardGameArray])
 
 
      
