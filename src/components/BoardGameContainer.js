@@ -27,11 +27,6 @@ function BoardGameContainer ({boardGameArray, handleFormSubmission, handleFavori
         setBoardGameModalObj(boardGameArray.find(eachObj => eachObj.id === BGMID))
     }
 
-    function handleButtonClick() {
-        setOpen(true)
-    }
-
-
     return(
         <div className="modalParent">
             <div className = "whatintarnation"></div>

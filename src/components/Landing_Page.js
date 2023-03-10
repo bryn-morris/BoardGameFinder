@@ -5,7 +5,7 @@ import FeaturedCardDetail from "./FeaturedCardDetail";
 import { Header } from 'semantic-ui-react'
 
 
-function LandingPage({favoriteFilterArray, paragraphBreaker}){
+function LandingPage({favoritedArray, paragraphBreaker}){
 
     const [showDetails, setShowDetails] = useState(false)
 
@@ -19,7 +19,7 @@ function LandingPage({favoriteFilterArray, paragraphBreaker}){
             Here you can find all of your favorite games!
         </Header.Subheader>
       </Header>
-      <Carousel2 favoriteFilterArray={favoriteFilterArray} setShowDetails={setShowDetails}/>
+      <Carousel2 favoritedArray={favoritedArray} setShowDetails={setShowDetails}/>
 
        <Route path = {`${match.url}:eBGID`}>
          <FeaturedCardDetail showDetails={showDetails} paragraphBreaker = {paragraphBreaker}/>

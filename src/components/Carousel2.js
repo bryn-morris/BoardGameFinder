@@ -4,15 +4,15 @@ import { Image,} from 'semantic-ui-react'
 import {MdOutlineArrowBackIosNew, MdOutlineArrowForwardIos} from 'react-icons/md';
 
 
-function Carousel2 ({favoriteFilterArray, setShowDetails}) {
+function Carousel2 ({favoritedArray, setShowDetails}) {
 
     const [indexObj, setIndexObj] = useState({start: 0,end:3})
     const [displayedCards, setDisplayedCards] = useState([])
     const [isArrow, setIsArrow] = useState({leftArrow:false, rightArrow:true})
 
     useEffect(()=>{
-        setDisplayedCards(favoriteFilterArray.slice(indexObj.start,indexObj.end))
-    },[favoriteFilterArray, indexObj.start, indexObj.end])
+        setDisplayedCards(favoritedArray.slice(indexObj.start,indexObj.end))
+    },[favoritedArray, indexObj.start, indexObj.end])
 
     function rightArrow (eventObj) {
         
@@ -23,12 +23,12 @@ function Carousel2 ({favoriteFilterArray, setShowDetails}) {
 
         setIsArrow({...isArrow, leftArrow: true})
 
-        if (end === favoriteFilterArray.length) {
+        if (end === favoritedArray.length) {
             setIsArrow({...isArrow, rightArrow: false})
         }
 
         setIndexObj({start: newStartIndex, end: newEndIndex});
-        setDisplayedCards(favoriteFilterArray.slice(newStartIndex,newEndIndex))
+        setDisplayedCards(favoritedArray.slice(newStartIndex,newEndIndex))
         setShowDetails(false);
     }
 
@@ -46,7 +46,7 @@ function Carousel2 ({favoriteFilterArray, setShowDetails}) {
         }
 
         setIndexObj({start: newStartIndex, end: newEndIndex});
-        setDisplayedCards(favoriteFilterArray.slice(newStartIndex,newEndIndex))
+        setDisplayedCards(favoritedArray.slice(newStartIndex,newEndIndex))
         setShowDetails(false);
     }
 

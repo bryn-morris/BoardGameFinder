@@ -9,14 +9,34 @@ import LandingPage from "./Landing_Page"
 function App() {
 
   const [boardGameArray, setBoardGameArray] = useState([]);
+  const [favoritedArray, setFavoritedArray] = useState([])
 
     useEffect(()=>{
+
 
         fetch("http://localhost:4000/boardgames")
             .then(r=>r.json())
             .then(setBoardGameArray)
+            
     },
     [])
+
+    useEffect(() => {
+        
+        fetch("http://localhost:4000/boardgames")
+            .then(r=>r.json())
+            .then(boardGameData => {
+                setFavoritedArray( ()=>{
+                    const newFavoritedArray = boardGameData.filter(eachBoardGame=>eachBoardGame.favorited)
+                    newFavoritedArray.unshift()
+                    
+                    return newFavoritedArray
+                })
+            })
+        })
+
+
+     
     
     function handleFavoriteUpdate(updateID, favoriteBoolean){
 
@@ -25,10 +45,11 @@ function App() {
             headers: {"Content-type" : "application/json"},
             body: JSON.stringify({favorited: favoriteBoolean})
         })
+        
     }
 
-    const favoriteFilterArray = boardGameArray.filter(eachBoardGame=>eachBoardGame.favorited)
-    favoriteFilterArray.unshift({})
+    
+    
     
 
     const handleFormSubmission = newFormObject => {
@@ -69,7 +90,7 @@ function App() {
     }
 
     const landingPagePropsObj = {
-        favoriteFilterArray : favoriteFilterArray,
+        favoritedArray : favoritedArray,
         paragraphBreaker: paragraphBreaker
     }
 
