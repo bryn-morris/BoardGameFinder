@@ -33,28 +33,36 @@ function App() {
                 setFavoritedArray( ()=>{
                     const newFavoritedArray = boardGameData.filter(eachBoardGame=>eachBoardGame.favorited)
                     newFavoritedArray.unshift()
-                    
                     return newFavoritedArray
                 })
             })
         },[boardGameArray])
 
-
-     
-    
     function handleFavoriteUpdate(updateID, favoriteBoolean){
+
+        function reRenderDom (rtrnLikedObj) {
+
+            const updatedArray = [...boardGameArray].map((eachObj)=> { 
+                
+                if (eachObj.id === updateID){
+                    return rtrnLikedObj;
+                } else {
+                    return eachObj;
+                } 
+
+            })
+            console.log(updatedArray)
+            setBoardGameArray(updatedArray)
+        }
 
         fetch(`http://localhost:4000/boardgames/${updateID}`,{
             method: "PATCH",
             headers: {"Content-type" : "application/json"},
             body: JSON.stringify({favorited: favoriteBoolean})
         })
-        
+            .then(r=>r.json())
+            .then(reRenderDom)
     }
-
-    
-    
-    
 
     const handleFormSubmission = newFormObject => {
     
