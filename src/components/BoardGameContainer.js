@@ -79,6 +79,9 @@ function BoardGameContainer ({boardGameArray, handleFormSubmission, handleFavori
                     }
                     )}
                 </Card.Group>
+                <p></p>
+                <p>test</p>
+                <p>TEST</p>
             </div>
         </div>
     );
