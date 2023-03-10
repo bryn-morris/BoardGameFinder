@@ -8,7 +8,7 @@ function Carousel2 ({favoriteFilterArray, setShowDetails}) {
 
     const [indexObj, setIndexObj] = useState({start: 0,end:3})
     const [displayedCards, setDisplayedCards] = useState([])
-    const [isArrow, setIsArrow] = useState({leftArrow:true, rightArrow:true})
+    const [isArrow, setIsArrow] = useState({leftArrow:false, rightArrow:true})
 
     useEffect(()=>{
         setDisplayedCards(favoriteFilterArray.slice(indexObj.start,indexObj.end))
@@ -18,30 +18,17 @@ function Carousel2 ({favoriteFilterArray, setShowDetails}) {
         
         const {start, end} = indexObj
 
-        // const newData =  {start: "", end: ""}
-    
-        // if (start > favoriteFilterArray.length()) {
-        //     newData.start = 0
-        // } else if (start < 0) {
-        //     newData.start = favoriteFilterArray.length();
-        // } else {
-        //     newData.start = (start+1)
-        // }
-
-        // if (start > favoriteFilterArray.length()) {
-        //     newData.end = 0
-        // } else if (start < 0) {
-        //     newData.end = favoriteFilterArray.length();
-        // } else {
-        //     newData.end = (end+1)
-        // }
-
         const newStartIndex = start+1; 
         const newEndIndex = end+1;
 
+        setIsArrow({...isArrow, leftArrow: true})
+
+        if (end === favoriteFilterArray.length) {
+            setIsArrow({...isArrow, rightArrow: false})
+        }
+
         setIndexObj({start: newStartIndex, end: newEndIndex});
         setDisplayedCards(favoriteFilterArray.slice(newStartIndex,newEndIndex))
-
         setShowDetails(false);
     }
 
@@ -52,9 +39,14 @@ function Carousel2 ({favoriteFilterArray, setShowDetails}) {
         const newStartIndex = start-1;
         const newEndIndex = end-1;
 
+        setIsArrow({...isArrow, rightArrow: true})
+
+        if (start === 0) {
+            setIsArrow({...isArrow, leftArrow: false})
+        }
+
         setIndexObj({start: newStartIndex, end: newEndIndex});
         setDisplayedCards(favoriteFilterArray.slice(newStartIndex,newEndIndex))
-
         setShowDetails(false);
     }
 
@@ -66,7 +58,7 @@ function Carousel2 ({favoriteFilterArray, setShowDetails}) {
         <div className="ui grid middle aligned carousel">
             <div className = "ui centered grid container">
                 <div className="column one wide centered middle aligned">
-                    <div onClick = {leftArrow}><MdOutlineArrowBackIosNew size={70}/></div>
+                    <div onClick = {leftArrow}>{isArrow.leftArrow ? <MdOutlineArrowBackIosNew size={70}/>: null }</div>
                 </div>
                         {displayedCards.map((eBO)=>{
                             return(
@@ -80,7 +72,7 @@ function Carousel2 ({favoriteFilterArray, setShowDetails}) {
                                 )})
                         }
                 <div className ="column one wide centered middle aligned">
-                    <div onClick = {rightArrow}><MdOutlineArrowForwardIos size={70}/></div>
+                    <div onClick = {rightArrow}>{isArrow.rightArrow ? <MdOutlineArrowForwardIos size={70}/>: null }</div>
                 </div>
             </div>
         </div>
