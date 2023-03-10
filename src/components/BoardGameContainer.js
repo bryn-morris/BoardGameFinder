@@ -63,6 +63,7 @@ function BoardGameContainer ({boardGameArray, handleFormSubmission, handleFavori
                 />
             </div>
             <div className = "cardContainer">
+                <p></p>
                 <Card.Group itemsPerRow={4}>
                     {boardGameArray.map((eBO) => {
                         return (

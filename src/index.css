@@ -13,8 +13,9 @@ code {
 }
 
 .modalbutton {
-  position: sticky;
-  top: 0%;
+  /* position: sticky; */
+  position: absolute;
+  top: 1.1%;
   left: 4%;
 }
 
@@ -121,6 +122,8 @@ code {
   margin-right: 0px;
 }
 
-/* .headerContainer {
+.headerContainer {
   background-color: #9FC9F3;
-} */
+}
+
+
